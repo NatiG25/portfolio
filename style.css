@@ -1,0 +1,28 @@
+.intro {
+  position: absolute;     								
+	width: 288px;
+	height: 126px;
+	left: 16px;
+	top: 224px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.01em;
+	color: #1A2236;
+}
+
+.title {
+	position: absolute;
+	width: 220px;
+	height: 100px;
+	left: 16px;
+	top: 104px;
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 100%;
+	color: #1A2236;
+}
