@@ -1,11 +1,10 @@
 .logo {
-font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 20px;
-color: #6070FF;
-margin-left: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  margin-left: 24px;
 }
 
 .menu {
@@ -14,40 +13,37 @@ margin-left: 24px;
 }
 
 .head-title {
-margin: 12px 24px;
-font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 52px;
-display: flex;
-align-items: center;
-color: #172B4D;
+  margin: 12px 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
 }
 
 .content {
-font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-color: #344563;
-margin:auto 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: auto 24px;
 }
 
 .connect {
-  font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-color: #7F8CFF;
-margin: 12px 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8Cff;
+  margin: 12px 24px;
 }
 
 .fab,
 .far {
-  color: #505F79;
+  color: #505f79;
   font-size: 20px;
   margin-right: 20px;
   display: inline;
@@ -56,15 +52,14 @@ margin: 12px 24px;
 
 .icons {
   min-width: 696px;
-list-style: none;
-display: table;
-margin: 0 auto;
-
+  list-style: none;
+  display: table;
+  margin: 0 auto;
 }
 
 .header {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .background {
@@ -74,4 +69,4 @@ justify-content: space-between;
   padding: 114px 24px;
   background-image: url(image/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
-  }
+}
