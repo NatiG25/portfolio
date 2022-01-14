@@ -136,7 +136,7 @@ body {
 
 .list {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -176,6 +176,50 @@ body {
   color: #6070ff;
   list-style: none;
   padding-left: 0;
+}
+
+.view p {
+  padding: 10px;
+  border: solid black;
+  border-radius: 8px;
+  border-width: thin;
+  margin-bottom: 40px;
+  margin-top: auto;
+  border-color: #6070ff;
+}
+
+.connect-about p {
+  margin-bottom: 26px;
+  margin-top: 12px;
+}
+
+.view-about p {
+  padding: 10px;
+  border: solid black;
+  border-radius: 8px;
+  border-width: thin;
+  margin-bottom: 40px;
+  margin-top: auto;
+  margin-top: 36px;
+  border-color: #396df2;
+}
+
+.language p {
+  margin-left: 16px;
+}
+
+.snapshoot-5 p {
+  padding-left: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.frameworks p {
+  margin-left: 16px;
 }
 
 .btns li p {
@@ -218,16 +262,6 @@ body {
   border-color: #5e6c84;
 }
 
-.view p {
-  padding: 10px;
-  border: solid black;
-  border-radius: 8px;
-  border-width: thin;
-  margin-bottom: 40px;
-  margin-top: auto;
-  border-color: #6070ff;
-}
-
 /* .Multi-Post-Stories-1 */
 
 .wrapper-3 {
@@ -262,13 +296,13 @@ body {
 /* Tonic-2 */
 
 .snapshoot-3 {
-  background-image: url(image/Snapshoot\ 3Portfolio\ \(1\).svg) ;
+  background-image: url(image/Snapshoot\ 3Portfolio\ \(1\).svg);
   background-repeat: no-repeat;
   min-height: 230px;
   padding: 0 16px;
 }
 
-  /* .Multi-Post-Stories-2 */
+  /* Multi-Post-Stories-2 */
 
 .snapshoot-4 {
   background-image: url(image/Snapshoot\ Portfolio\ 4\(1\).svg);
@@ -318,11 +352,6 @@ body {
   text-decoration: none;
 }
 
-.connect-about p {
-  margin-bottom: 26px;
-  margin-top: 12px;
-}
-
 .icons-about {
   min-width: 696px;
   list-style: none;
@@ -362,17 +391,6 @@ body {
   border-color: #5e6c84;
 }
 
-.view-about p {
-  padding: 10px;
-  border: solid black;
-  border-radius: 8px;
-  border-width: thin;
-  margin-bottom: 40px;
-  margin-top: auto;
-  margin-top: 36px;
-  border-color: #396df2;
-}
-
 .language {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -382,10 +400,6 @@ body {
   display: flex;
   text-decoration: none;
   color: #000;
-}
-
-.language p {
-  margin-left: 16px;
 }
 
 .languages-about {
@@ -405,17 +419,6 @@ body {
   display: flex;
   text-decoration: none;
   list-style: none;
-}
-
-.snapshoot-5 p {
-  padding-left: 16px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-
 }
 
 .snapshoot-5 img {
@@ -442,7 +445,7 @@ body {
 }
 
 .frameworks {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -450,10 +453,6 @@ body {
   display: flex;
   text-decoration: none;
   color: #000;
-}
-
-.frameworks p {
-  margin-left: 16px;
 }
 
 .fas {
