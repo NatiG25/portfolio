@@ -314,7 +314,7 @@ body {
 /* About Myself */
 
 .wrapper-about {
-  width: 300px;
+  width: 100%;
   height: 1263px;
   padding: 24px;
   margin-top: 114px;
@@ -323,6 +323,7 @@ body {
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
+  border-top-right-radius: 60px;
 }
 
 .about {
