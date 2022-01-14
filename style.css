@@ -54,6 +54,7 @@ body {
   background-image: url(image/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
   margin-top: 0;
+  background-size: 100%;
 }
 
 .content {
@@ -199,6 +200,24 @@ border-radius: 16px;
   color: #396df2;
 }
 
+.view :hover {
+  background-color: #6070ff;
+  color: #ffffff;
+  border-color: #6070ff;
+}
+
+.view :active {
+  background-color: #2230d2;
+  color: #ffffff;
+  border-color: #2230d2;
+}
+
+.view :disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
+  border-color: #5e6c84;
+}
+
 .view p {
   padding: 10px;
   border: solid black;
@@ -206,9 +225,23 @@ border-radius: 16px;
   border-width: thin;
   margin-bottom: 40px;
   margin-top: auto;
+  border-color: #6070ff;
+
 }
 
 /* .Multi-Post-Stories-1 */
+
+.wrapper-3 {
+  width: 327px;
+  height: 596px;
+  padding: 16px;
+  margin: 0 24px;
+  margin-bottom: 88px;
+  background-color: #ffffff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
 
 .snapshoot-2 {
   background-repeat: no-repeat;
@@ -309,7 +342,23 @@ border-radius: 16px;
   text-decoration: none;
   margin: 0;
   color: #396df2;
-  ;
+}
+.view-about :hover {
+  background-color: #6070ff;
+  color: #ffffff;
+  border-color: #6070ff;
+}
+
+.view-about :active {
+  background-color: #2230d2;
+  color: #ffffff;
+  border-color: #2230d2;
+}
+
+.view-about :disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
+  border-color: #5e6c84;
 }
 
 .view-about p {
@@ -320,6 +369,7 @@ border-radius: 16px;
   margin-bottom: 40px;
   margin-top: auto;
   margin-top: 36px;
+  border-color: #396df2;
 }
 
 .language {
