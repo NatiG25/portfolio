@@ -3,6 +3,7 @@ body {
 }
 
 .wrapper-1 {
+  width: 375px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
