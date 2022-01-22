@@ -485,6 +485,7 @@ textarea {
   min-height: 170px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  width: 100%;
 }
 
 .view-contact {
