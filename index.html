@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
@@ -15,17 +14,24 @@
       src="https://kit.fontawesome.com/04970764d6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" media="(min-width: 992px)" href="media.css">
+    <link rel="stylesheet" media="(max-width: 992px)" href="style.css">
   </head>
   <body>
     <header class="header">
-      <a href="" class="logo"><p>My Logo</p></a>
+      <a href="#" class="logo"><p>My Logo</p></a>
       <nav class="menu"><i class="fas fa-bars"></i></nav>
+      <ul class="info">
+        <li><a href="#">Portifolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </header>
 
     <main>
       <section class="wrapper-1 background intro-radious">
         <h1 class="head-title">
-          I’m Mariane <br />
+          I’m Temesgen <br />
           Glad to see you!
         </h1>
         <p class="content">
@@ -56,12 +62,24 @@
       <!-- Tonic-1 -->
 
       <section class="wrapper-1 cards-radious">
-        <a href="#">
-          <img class="card-img" src="image/Snapshoot-Portfolio.png" alt="#" />
+        <div class="half-cards">
+        <a href="#" class="card-img">
+          <img src="image/Snapshoot-Portfolio.png" alt="#" />
         </a>
+        <a href="#" class="media-img">
+          <img src="image/Snapshoot-Portfolio1.svg" alt="#" />
+        </a>
+      </div>
+      <div class="other-half">
         <h2 class="tonic">Tonic</h2>
+        <h2 class="tonic-media">Tonic</h2>
 
         <div class="list">
+          <p class="canopy">CANOPY</p>
+          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
+          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
+        </div>
+        <div class="list-media">
           <p class="canopy">CANOPY</p>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
@@ -70,7 +88,22 @@
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
         </p>
+        <p class="content-media">
+          A daily selection of privately personalized reads; no accounts or
+          sign-ups required.
+        </p>
         <ul class="btns">
+          <li>
+            <p>html</p>
+          </li>
+          <li>
+            <p>css</p>
+          </li>
+          <li>
+            <p>javascript</p>
+          </li>
+        </ul>
+        <ul class="btns-media">
           <li>
             <p>html</p>
           </li>
@@ -83,25 +116,43 @@
         </ul>
         <a href="#" class="view"><p>See Project</p></a>
       </section>
+      </div>
 
       <!-- Multi-Post-Stories-1 -->
 
-      <section class="wrapper-1 cards-radious">
-        <a href="#">
-          <img class="card-img" src="image/Snapshoot-Portfolio.svg" alt="#" />
+      <section class="wrapper-1 cards-radious reverse">
+        <div class="half-cards2">
+        <a href="#" class="card-img">
+          <img src="image/Snapshoot-Portfolio.svg" alt="#" />
         </a>
+        <a href="#" class="media-img" >
+          <img src="image/Snapshoot-4Portfolio.svg" alt="#" />
+        </a>
+        </div>
+        <div class="other-half2">
         <h2 class="tonic">
-          Multi-Post <br />
-          Stories
+          Multi-Post <br> Stories
         </h2>
+        <h2 class="tonic-media">
+          Multi-Post Stories
+        </h2>
+
         <div class="list">
           <p class="canopy">CANOPY</p>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
         </div>
+        <div class="list-media">
+          <p class="canopy">FACEBOOK</p>
+          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Full Stack Dev</p></a>
+          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
+        </div>
         <p class="content-2">
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
+        </p>
+        <p class="content-media">
+          Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
         </p>
         <ul class="btns">
           <li>
@@ -114,26 +165,58 @@
             <p>javascript</p>
           </li>
         </ul>
+        <ul class="btns-media">
+          <li>
+            <p>html</p>
+          </li>
+          <li>
+            <p>Ruby on rails</p>
+          </li>
+          <li>
+            <p>css</p>
+          </li>
+          <li>
+            <p>javascript</p>
+          </li>
+        </ul>
         <a href="#" class="view"><p>See Project</p></a>
+      </div>
       </section>
       
       <!-- Tonic-2 -->
 
       <section class="wrapper-1 cards-radious">
-        <a href="#">
-          <img class="card-img" src="image/Snapshoot-3Portfolio.svg" alt="#" />
+        <div class="half-cards">
+        <a href="#" class="card-img">
+          <img src="image/Snapshoot-3Portfolio.svg" alt="#" />
         </a>
+        <a href="#" class="media-img">
+          <img src="image/Snapshoot-Portfolio.png" alt="#" />
+        </a>
+        </div>
+        <div class="other-half">
         <h2 class="tonic">Tonic</h2>
+        <h2 class="tonic-media">Facebook 360</h2>
 
         <div class="list">
           <p class="canopy">CANOPY</p>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
         </div>
+        <div class="list-media">
+          <p class="canopy">FACEBOOK</p>
+          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Full Stack Dev</p></a>
+          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
+        </div>
+
         <p class="content-2">
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
         </p>
+        <p class="content-media">
+          Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+        </p>
+
         <ul class="btns">
           <li>
             <p>html</p>
@@ -145,29 +228,59 @@
             <p>javascript</p>
           </li>
         </ul>
+        <ul class="btns-media">
+          <li>
+            <p>html</p>
+          </li>
+          <li>
+            <p>Ruby on rails</p>
+          </li>
+          <li>
+            <p>css</p>
+          </li>
+          <li>
+            <p>javascript</p>
+          </li>
+        </ul>
         <a href="#" class="view"><p>See Project</p></a>
+      </div>
       </section>
 
       <!-- Multi-Post-Stories-2 -->
 
       <section class="wrapper-1 cards-radious">
-        <a href="#">
-          <img class="card-img" src="image/Snapshoot-4Portfolio.svg" alt="#" />
+        <div class="half-cards2">
+        <a href="#" class="card-img">
+          <img src="image/Snapshoot-4Portfolio.svg" alt="#" />
         </a>
+        <a href="#" class="media-img">
+          <img src="image/Snapshoot-Portfolio.svg" alt="#" />
+        </a>
+        </div>
+        <div class="other-half2">
         <h2 class="tonic">
           Multi-Post <br />
           Stories
         </h2>
+        <h2 class="tonic-media">Uber Navigation</h2>
 
         <div class="list">
           <p class="canopy">CANOPY</p>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
         </div>
+        <div class="list-media">
+          <p class="canopy">UBER</p>
+          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Lead Developer</p></a>
+          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2018</p></a>
+        </div>
+
         <p class="content-2">
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
         </p>
+        <p class="content-media">
+          A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.        </p>
         <ul class="btns">
           <li>
             <p>html</p>
@@ -179,12 +292,28 @@
             <p>javascript</p>
           </li>
         </ul>
+        <ul class="btns-media">
+          <li>
+            <p>html</p>
+          </li>
+          <li>
+            <p>Ruby on rails</p>
+          </li>
+          <li>
+            <p>css</p>
+          </li>
+          <li>
+            <p>javascript</p>
+          </li>
+        </ul>
         <a href="#" class="view"><p>See Project</p></a>
+      </div>
       </section>
 
       <!-- About Myself -->
 
       <section class="wrapper-about wrapper-1">
+        <div class="half-about">
         <h2 class="about">
           About <br />
           Myself
@@ -216,9 +345,11 @@
           </li>
         </ul>
         <a href="#" class="view-about"><p>Get my resume</p></a>
+      </div>
 
         <!-- Langguages -->
 
+        <div class="other-half">
         <ul class="languages-about">
           <li>
             <a href="#" class="language"><p>Langguages</p></a>
@@ -264,7 +395,38 @@
             <a href="#"><i class="fas fa-chevron-right"></i></a>
           </li>
         </ul>
+      </div>
       </section>
+      <!-- Contact Me -->
+
+      <footer class="wrapper-contact background-contact">
+        <h2 class="contact-title">Contact me</h2>
+
+        <p class="content-contact">
+          If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
+        </p>
+
+        <form action="https://formspree.io/f/xeqnevwb" method="post">
+          <ul class="list-form">
+            <li>
+              <label for="name"></label>
+              <input class="name-contact" id="name" type="text" maxlength="30" required name="fullName" placeholder="Full name" />
+            </li>
+            <li>
+              <label for="mail"></label>
+              <input class="name-contact" id="mail" type="email" required name="userEmail" placeholder="Enter your E-Mail address" />
+            </li>
+            <li>
+              <label for="message"></label>
+              <textarea class="textarea" name="userMessage" id="message" required placeholder="Write your message here"></textarea>
+
+            </li>
+            <li class="submit-button">
+              <button class="view-contact" type="submit">Get In Touch</button>
+            </li>
+          </ul>
+        </form>
+      </footer>
     </main>
   </body>
 </html>

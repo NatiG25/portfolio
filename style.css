@@ -6,6 +6,15 @@ body {
   background-color: #e5e5e5;
 }
 
+.info,
+.media-img,
+.list-media,
+.content-media,
+.btns-media,
+.tonic-media {
+  display: none;
+}
+
 .intro-radious {
   border-bottom-left-radius: 100px;
   margin-bottom: 80px;
@@ -26,7 +35,7 @@ body {
   padding: 16px;
 }
 
-.card-img {
+.card-img img {
   width: 100%;
 }
 
@@ -104,7 +113,6 @@ body {
 }
 
 .icons {
-  min-width: 696px;
   list-style: none;
   display: table;
   margin: 0;
@@ -253,7 +261,6 @@ body {
 /* .Multi-Post-Stories-1 */
 
 .wrapper-3 {
-  width: 327px;
   padding: 16px;
   margin: 0 24px;
   margin-bottom: 88px;
@@ -313,9 +320,8 @@ body {
 }
 
 .icons-about {
-  min-width: 696px;
   list-style: none;
-  display: table;
+  display: flex;
   margin: 16px 0 24px 0;
 }
 
@@ -420,4 +426,96 @@ body {
 
 .fas {
   color: #000;
+}
+
+/* Contacts */
+
+.wrapper-contact {
+  padding: 103px 24px 0 24px;
+  border-top-left-radius: 80px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-contact {
+  background-repeat: no-repeat;
+  background-image: url(image/contact-background.svg);
+  background-color: #6070ff;
+  background-size: 100%;
+}
+
+.contact-title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.content-contact {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin: 12px auto auto auto;
+  text-align: center;
+}
+
+.list-form li {
+  list-style: none;
+  margin: 27px auto;
+}
+
+.name-contact {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+textarea {
+  resize: none;
+  padding: 15px;
+  min-height: 170px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  width: 100%;
+}
+
+.view-contact {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 12px 16px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  transition: 0.1s ease-out;
+}
+
+.submit-button :hover {
+  transform: translateY(-5px);
+}
+
+.submit-button :active {
+  background-color: #2230d2;
+  color: #fff;
+  border-color: #2230d2;
+}
+
+.submit-button :disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
+  border-color: #5e6c84;
 }
