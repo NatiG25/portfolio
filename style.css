@@ -32,7 +32,7 @@ body {
   padding: 16px;
 }
 
-.card-img img{
+.card-img img {
   width: 100%;
 }
 
@@ -427,6 +427,7 @@ body {
 .fas {
   color: #000;
 }
+
 /* Contacts */
 
 .wrapper-contact {
@@ -495,7 +496,7 @@ textarea {
   line-height: 24px;
   display: flex;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   padding: 12px 16px;
   background-color: #fff;
   border: 1px solid #fff;
