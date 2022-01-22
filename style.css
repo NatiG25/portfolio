@@ -7,8 +7,11 @@ body {
 }
 
 .info,
-.card-img2,
-.reverse {
+.media-img,
+.list-media,
+.content-media,
+.btns-media,
+.tonic-media {
   display: none;
 }
 
