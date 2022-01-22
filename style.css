@@ -113,7 +113,6 @@ body {
 }
 
 .icons {
-  min-width: 696px;
   list-style: none;
   display: table;
   margin: 0;
@@ -262,7 +261,6 @@ body {
 /* .Multi-Post-Stories-1 */
 
 .wrapper-3 {
-  width: 327px;
   padding: 16px;
   margin: 0 24px;
   margin-bottom: 88px;
@@ -322,9 +320,8 @@ body {
 }
 
 .icons-about {
-  min-width: 696px;
   list-style: none;
-  display: table;
+  display: flex;
   margin: 16px 0 24px 0;
 }
 
@@ -485,7 +482,6 @@ body {
 textarea {
   resize: none;
   padding: 15px;
-  min-width: 350px;
   min-height: 170px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
