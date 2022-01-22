@@ -93,13 +93,13 @@
 
   .header {
     position: fixed;
+    padding: 26px auto;
     display: flex;
     justify-content: space-between;
     list-style: none;
     text-decoration: none;
     background-color: white;
     width: 100%;
-    padding: 26px auto 26px auto;
   }
 
   .background {
