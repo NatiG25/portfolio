@@ -93,7 +93,7 @@
 
   .header {
     position: fixed;
-    padding: 26px auto;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     list-style: none;
