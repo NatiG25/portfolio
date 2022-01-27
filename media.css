@@ -183,6 +183,7 @@
   .list-media {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 12px 0 24px 0;
     grid-column-start: 2;
   }

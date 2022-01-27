@@ -143,6 +143,7 @@ body {
   display: flex;
   align-items: center;
   margin: 12px 0;
+  justify-content: space-between;
 }
 
 .list p {
