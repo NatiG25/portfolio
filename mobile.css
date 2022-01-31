@@ -51,7 +51,6 @@ body {
   text-decoration: none;
 }
 
-
 .head-title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -85,6 +84,7 @@ body {
   background-color: #6070ff;
   border-radius: 20px;
 }
+
 /* Active classes for mobile  */
 .menu {
   cursor: pointer;
