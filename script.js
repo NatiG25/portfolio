@@ -1,4 +1,4 @@
-const menu = document.querySelector(".menu");
+let menu = document.querySelector(".menu");
 const info = document.querySelector(".info");
 const headline = document.querySelector(".background");
 
