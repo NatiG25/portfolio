@@ -62,14 +62,11 @@ body {
 }
 
 .header {
-  position: fixed;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
   text-decoration: none;
-  padding: 5px 0 5px 0;
   background-color: white;
 }
 
@@ -90,7 +87,7 @@ body {
 /* Active classes for mobile  */
 .menu {
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 1.5rem;
 }
 
 .info {
