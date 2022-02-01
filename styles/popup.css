@@ -1,0 +1,18 @@
+.popup-body {
+  background: #fff;
+  position: fixed;
+  top: 5%;
+  left: 2.5%;
+  width: 95vw;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.popup-section {
+  padding: 18px 3%;
+}
+
+.popup-head {
+  display: flex;
+  justify-content: space-between;
+}
