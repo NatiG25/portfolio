@@ -14,17 +14,21 @@
       src="https://kit.fontawesome.com/04970764d6.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" media="(min-width: 992px)" href="media.css">
-    <link rel="stylesheet" media="(max-width: 992px)" href="style.css">
+    <link rel="stylesheet" media="(min-width: 992px)" href="desktop.css">
+    <link rel="stylesheet" media="(max-width: 992px)" href="mobile.css">
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">My Logo</a>
-      <nav class="menu"><i class="fas fa-bars"></i></nav>
+      <a href="#" class="logo">My Logo</a>      
+      <div class="menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <ul class="info">
-        <li><a href="#">Portifolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#portfolio" class="nav-link">Portifolio</a></li>
+        <li><a href="#about" class="nav-link" >About</a></li>
+        <li><a href="#contact" class="nav-link" >Contact</a></li>
       </ul>
     </header>
 
@@ -61,7 +65,7 @@
       </section>
       <!-- Tonic-1 -->
 
-      <section class="wrapper-1 cards-radious">
+      <section id="portfolio" class="wrapper-1 cards-radious">
         <div class="half-cards">
         <a href="#" class="card-img">
           <img src="image/Snapshoot-Portfolio.png" alt="Project-preview-1" />
@@ -312,7 +316,7 @@
 
       <!-- About Myself -->
 
-      <section class="wrapper-about wrapper-1">
+      <section id="about" class="wrapper-about wrapper-1">
         <div class="half-about">
         <h2 class="about">
           About <br />
@@ -399,7 +403,7 @@
       </section>
       <!-- Contact Me -->
 
-      <footer class="wrapper-contact background-contact">
+      <footer id="contact" class="wrapper-contact background-contact">
         <h2 class="contact-title">Contact me</h2>
 
         <p class="content-contact">
@@ -428,5 +432,6 @@
         </form>
       </footer>
     </main>
+    <script src="/script.js"></script>
   </body>
 </html>
