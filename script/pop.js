@@ -5,7 +5,7 @@ const projects = [
     description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"],
     tags: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     seeLivelink: '#',
-    seeSourceLink: '#'
+    seeSourceLink: '#',
   },
 
   {
@@ -14,7 +14,7 @@ const projects = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     tags: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     seeLivelink: '#',
-    seeSourceLink: '#'
+    seeSourceLink: '#',
   },
   {
     title: 'Tonic',
@@ -22,27 +22,27 @@ const projects = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     tags: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     seeLivelink: '#',
-    seeSourceLink: '#'
+    seeSourceLink: '#',
   },
   {
     title: 'Multi-Post Stories',
     src: './image/Snapshoot-4Portfolio.svg',
-    description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    tags : ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    tags: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     seeLivelink: '#',
-    seeSourceLink: '#'
-  }
+    seeSourceLink: '#',
+  },
 ];
 
-const popButtons = document.getElementsByClassName("view");
+const popButtons = document.getElementsByClassName('view');
 const work = document.querySelector('.cards-radious');
 const popup = document.createElement('section');
 popup.classList.add('popup-body');
 
 function popupDisplay(cardNum) {
-    popup.style.display = ('block');
-    work.appendChild(popup);
-    popup.innerHTML = `
+  popup.style.display = ('block');
+  work.appendChild(popup);
+  popup.innerHTML = `
         <div class="tonic-popup">
           <h2>${projects[cardNum].title}</h2>
           <i id="closeBtn" class="fas fa-times" alt='#'></i>
@@ -80,16 +80,16 @@ function popupDisplay(cardNum) {
         </div>
         </div>
         </div>
-    `
-    document.addEventListener('click', (event) => {
-      if (event.target.id === "closeBtn") {
-        popup.style.display = 'none'
-      }
-    });
-  }
-
-  for (let i = 0 ; i < popButtons.length; i += 1) {
-    popButtons[i].addEventListener('click', () => {
-      popupDisplay(i);
-    })
+    `;
+  document.addEventListener('click', (event) => {
+    if (event.target.id === 'closeBtn') {
+      popup.style.display = 'none';
+    }
+  });
 }
+
+for (let i = 0; i < popButtons.length; i += 1) {
+  popButtons[i].addEventListener('click', () => {
+    popupDisplay(i);
+  })
+};
