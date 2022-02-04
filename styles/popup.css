@@ -38,7 +38,6 @@
     border-width: thin;
     border-color: #6070ff;
   }
-}
 
   .view-popup p {
     display: flex;
@@ -48,6 +47,7 @@
     border-width: thin;
     border-color: #6070ff;
   }
+  
   .popup-btns li p {
     margin-right: 32px;
     text-decoration: none;
@@ -103,6 +103,7 @@
     text-decoration: none;
     color: #396df2;
   }
+}
 
 /* Desktop-popup */
 
