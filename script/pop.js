@@ -39,7 +39,7 @@ const work = document.querySelector('.cards-radious');
 const popup = document.createElement('section');
 popup.classList.add('popup-body');
 
-function popupDisplay(cardNum) {
+function popupDisplay(cardNbr) {
   popup.style.display = ('block');
   work.appendChild(popup);
   popup.innerHTML = `
