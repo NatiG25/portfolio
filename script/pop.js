@@ -128,14 +128,14 @@ const email = document.getElementById('email');
 const errorMessage = document.getElementById('error');
 const form = document.getElementById('form');
 
-  form.addEventListener('submit', (event) => {
-    const mssg = ['The email is not valid, email characters should be in lowercase'];
+form.addEventListener('submit', (event) => {
+  const mssg = ['The email is not valid, email characters should be in lowercase'];
 
-    if(email.value !== email.value.toLowerCase()){
-      event.preventDefault();
-      errorMessage.innerHTML = mssg.join(', ');
-      errorMessage.style.display = ('flex');
-    } else {
-      errorMessage.style.display = ('none');
-    }
-})
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMessage.innerHTML = mssg.join(', ');
+    errorMessage.style.display = ('flex');
+  } else {
+    errorMessage.style.display = ('none');
+  }
+});
