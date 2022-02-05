@@ -117,7 +117,7 @@ function popupDisplay(cardNum) {
   });
 }
 
-for (let i = 0; i < popButtons.length; i+= 1) {
+for (let i = 0; i < popButtons.length; i += 1) {
   popButtons[i].addEventListener('click', () => {
     popupDisplay(i);
   });
