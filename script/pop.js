@@ -103,7 +103,7 @@ function popupDisplay(cardNum) {
             <div class='popup-buttons'>
               <a href="${projects[cardNum].seeLivelink}" class="view-popup"> <p> See live&#160; <img src="image/Arrow-Export.svg" alt="arrow icon">
               </p> </a>
-              <a href="${projects[cardNum].seeSourceLink}" class="view-popup"> <p> See Source&#160; <i class="fab fa-github"></i></p> </a>
+              <a href="${projects[cardNum].seeSourceLink}" class="view-popup"> <p> See Source&#160; <img src="image/Frame.svg"></p> </a>
         </div>
         </div>
         </div>
@@ -122,3 +122,20 @@ for (let i = 0; i < popButtons.length; i += 1) {
     popupDisplay(i);
   });
 }
+
+// Validate form
+const email = document.getElementById('email');
+const errorMessage = document.getElementById('error');
+const form = document.getElementById('form');
+
+form.addEventListener('submit', (event) => {
+  const mssg = ['The email is not valid, email characters should be in lowercase'];
+
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMessage.innerHTML = mssg.join(', ');
+    errorMessage.style.display = ('flex');
+  } else {
+    errorMessage.style.display = ('none');
+  }
+});
