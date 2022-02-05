@@ -38,10 +38,16 @@ const popButtons = document.getElementsByClassName('view');
 const work = document.querySelector('.cards-radious');
 const popup = document.createElement('section');
 popup.classList.add('popup-body');
+const overlay = document.createElement('div');
+overlay.setAttribute('id', 'overlay');
+const { body } = document;
 
 function popupDisplay(cardNum) {
+  body.style.overflowY = ('hidden');
   popup.style.display = ('block');
+  overlay.style.display = ('block');
   work.appendChild(popup);
+  work.appendChild(overlay);
   popup.innerHTML = `
         <div class="tonic-popup">
           <h2>${projects[cardNum].title}</h2>
@@ -84,11 +90,13 @@ function popupDisplay(cardNum) {
   document.addEventListener('click', (event) => {
     if (event.target.id === 'closeBtn') {
       popup.style.display = 'none';
+      overlay.style.display = 'none';
+      body.style.overflowY = ('auto');
     }
   });
 }
 
-for (let i = 0; i < popButtons.length; i += 1) {
+for (let i = 0; i < popButtons.length; i++) {
   popButtons[i].addEventListener('click', () => {
     popupDisplay(i);
   });
