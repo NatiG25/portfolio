@@ -239,4 +239,15 @@
     mix-blend-mode: multiply;
     pointer-events: all;
   }
+
+  /* Validate error */
+  #error {
+    display: none;
+    margin: 10px 0;
+    padding: 12px;
+    justify-content: center;
+    font-size: 13px;
+    background-color: #ffd2d2;
+    color: #d8000c;
+  }
 }

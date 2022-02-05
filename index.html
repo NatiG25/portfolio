@@ -411,7 +411,7 @@
           If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
         </p>
 
-        <form action="https://formspree.io/f/xeqnevwb" method="post">
+        <form action="https://formspree.io/f/xeqnevwb" method="post" id="form">
           <ul class="list-form">
             <li>
               <label for="name"></label>
@@ -419,12 +419,14 @@
             </li>
             <li>
               <label for="mail"></label>
-              <input class="name-contact" id="mail" type="email" required name="userEmail" placeholder="Enter your E-Mail address" />
+              <input class="name-contact" id="email" type="email" required name="userEmail" placeholder="Enter your E-Mail address" />
             </li>
             <li>
               <label for="message"></label>
               <textarea class="textarea" name="userMessage" id="message" required placeholder="Write your message here"></textarea>
 
+            </li>
+            <li id="error">
             </li>
             <li class="submit-button">
               <button class="view-contact" type="submit">Get In Touch</button>
