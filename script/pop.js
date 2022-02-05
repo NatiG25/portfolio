@@ -44,10 +44,10 @@ const { body } = document;
 
 function popupDisplay(cardNum) {
   body.style.overflowY = ('hidden');
-  popup.style.display = ('block');
   overlay.style.display = ('block');
-  work.appendChild(popup);
+  popup.style.display = ('block');
   work.appendChild(overlay);
+  work.appendChild(popup);
   popup.innerHTML = `
         <div class="tonic-popup">
           <h2>${projects[cardNum].title}</h2>

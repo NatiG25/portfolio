@@ -6,6 +6,8 @@
   .popup-body {
     background: #fff;
     position: fixed;
+    opacity: 2;
+
     top: 5%;
     left: 2.5%;
     overflow-y: scroll;
