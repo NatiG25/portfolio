@@ -79,6 +79,27 @@ function popupDisplay(cardNum) {
               <p>${projects[cardNum].tags[2]}</p>
               </li>
             </ul>
+
+            <ul class="popup-btns-media">
+            <li>
+            <p>${projects[cardNum].tags[0]}</p>
+            </li>
+            <li>
+            <p>${projects[cardNum].tags[1]}</p>
+            </li>
+            <li>
+            <p>${projects[cardNum].tags[2]}</p>
+            </li>
+            <li>
+            <p>${projects[cardNum].tags[3]}</p>
+            </li>
+            <li>
+            <p>${projects[cardNum].tags[4]}</p>
+            </li>
+            <li>
+            <p>${projects[cardNum].tags[5]}</p>
+            </li>
+          </ul>
             <div class='popup-buttons'>
               <a href="${projects[cardNum].seeLivelink}" class="view-popup"> <p> See live&#160; <img src="image/Arrow-Export.svg" alt="arrow icon">
               </p> </a>
