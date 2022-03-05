@@ -10,7 +10,10 @@ In this project I designed a mobile version for template 1 from figma.
 
 ## Built With
 
-- HTML & CSS
+- HTML
+- CSS
+- JavaScript
+- Vscode
 
 ## Authors
 
