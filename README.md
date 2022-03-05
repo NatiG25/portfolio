@@ -1,6 +1,6 @@
 # Portifolio
 
->In this project I designed a mobile version for template 1 from figma.
+>In this project I designed a page from figma. Used JavaScript to implement popups along with navigation links in order for the user to navigate properly around the page.
 
 ## Live Demo
 
