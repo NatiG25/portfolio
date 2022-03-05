@@ -1,8 +1,6 @@
 # Portifolio
 
-> Mobile version skeleton.
-
-In this project I designed a mobile version for template 1 from figma.
+>In this project I designed a mobile version for template 1 from figma.
 
 ## Live Demo
 
