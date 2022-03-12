@@ -1,6 +1,6 @@
 # Portifolio
 
->In this project I designed a page from figma. Used JavaScript to implement popups along with navigation links in order for the user to navigate properly around the page.
+>This is my Portifolio where hiring managers can see what I can bring into the table. The page also includes a few of my most complex projects.
 
 ## Live Demo
 
