@@ -21,7 +21,7 @@
 
 - GitHub: [@NatiG25](https://github.com/NatiG25)
 - Twitter: [@NatiG87702270](https://twitter.com/NatiG87702270)
-- LinkedIn: [@Temesgen G/gogis](https://linkedin.com/in/Temesgen G/gogis)
+- LinkedIn: [@Temesgen](https://linkedin.com/in/Temesgen)
 
 ## 🤝 Contributing
 
