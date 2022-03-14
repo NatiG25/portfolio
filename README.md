@@ -2,7 +2,7 @@
 
 # Portifolio
 
->This is my Portifolio where hiring managers can see what I can bring into the table. The page also includes a few of my most complex projects.
+>A Portifolio where four of my most complex projects are presented. Allowing other users or potential employers to see each project live. Build with plain CSS.
 
 ## Live Demo
 
