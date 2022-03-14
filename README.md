@@ -21,7 +21,7 @@
 
 - GitHub: [@NatiG25](https://github.com/NatiG25)
 - Twitter: [@NatiG87702270](https://twitter.com/NatiG87702270)
-- LinkedIn: [@Temesgen](https://linkedin.com/in/Temesgen)
+- LinkedIn: [@Temesgen](https://linkedin.com/in/nati.g5684@gmail.com)
 
 ## 🤝 Contributing
 
