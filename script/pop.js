@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Budget App',
     src: './image/BudgetApp.png',
-    description: "You have a list of transactions associated with a category so that you can see how much money you spent and on what.",
+    description: 'You have a list of transactions associated with a category so that you can see how much money you spent and on what.',
     tags: ['html', 'css', 'github', 'ruby', 'ruby on rails', 'Bootstrap'],
     seeLivelink: 'https://budget-app-nati.herokuapp.com/',
     seeSourceLink: 'https://github.com/NatiG25/budget-app',
