@@ -1,11 +1,11 @@
 const projects = [
   {
-    title: 'Riyadh Season',
-    src: './image/Riyadh-portifolio.png',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"],
-    tags: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
-    seeLivelink: 'https://natig25.github.io/Riyadh-season/',
-    seeSourceLink: '#',
+    title: 'Space Travels',
+    src: './image/SpaceTravelers.png',
+    description: ["This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. All information are real live data from the SpaceX API."],
+    tags: ['html', 'css', 'javascript', 'github', 'react', 'redux'],
+    seeLivelink: 'https://spacehub1.netlify.app/',
+    seeSourceLink: 'https://github.com/NatiG25/Space-Travels-Hub',
   },
 
   {
