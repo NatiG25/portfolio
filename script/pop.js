@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Space Travels',
     src: './image/SpaceTravelers.png',
-    description: ["This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. All information are real live data from the SpaceX API."],
+    description: ['This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. All information are real live data from the SpaceX API.'],
     tags: ['html', 'css', 'javascript', 'github', 'react', 'redux'],
     seeLivelink: 'https://spacehub1.netlify.app/',
     seeSourceLink: 'https://github.com/NatiG25/Space-Travels-Hub',
