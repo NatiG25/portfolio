@@ -20,8 +20,8 @@
 👤 **Author1**
 
 - GitHub: [@NatiG25](https://github.com/NatiG25)
-- Twitter: [@NatiG87702270](https://twitter.com/NatiG87702270)
-- LinkedIn: [@Nati](https://linkedin.com/in/temesgen-g-gorgis-0910a6229 )
+- Twitter: [@NatiG255](https://twitter.com/NatiG255)
+- LinkedIn: [@Nati](https://www.linkedin.com/in/natigorgis/)
 
 ## 🤝 Contributing
 
