@@ -10,10 +10,8 @@ body {
   font-style: normal;
 }
 
-.card-img,
 .list,
-.btns,
-.tonic {
+.btns {
   display: none;
 }
 
@@ -40,18 +38,14 @@ body {
   column-gap: 22px;
 }
 
-.half-cards {
-  grid-column: 1;
-}
-
-.other-half {
-  grid-row: 1;
-  grid-column: 2;
-}
-
-.media-img img {
+.card-img {
   width: 100%;
 }
+
+/* .other-half {
+  grid-row: 1;
+  grid-column: 2;
+} */
 
 .half-cards2 {
   grid-column: 2;
@@ -561,7 +555,6 @@ textarea {
 
 @media screen and (max-width: 700px) {
   .info,
-  .media-img,
   .list-media,
   .content-media,
   .btns-media,
@@ -581,10 +574,6 @@ textarea {
     padding: 16px;
   }
 
-  .card-img img {
-    width: 100%;
-  }
-
   .logo {
     margin-left: 24px;
   }
@@ -596,12 +585,7 @@ textarea {
   }
 
   .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    text-decoration: none;
-    background-color: white;
+    position: static;
   }
 
   .menu i {
