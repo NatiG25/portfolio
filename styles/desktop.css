@@ -2,11 +2,11 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: #e5e5e5;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -58,7 +58,6 @@ body {
   margin-right: 32px;
   text-decoration: none;
   color: #344563;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -121,9 +120,7 @@ body {
 }
 
 .icons {
-  min-width: 696px;
   list-style: none;
-  display: table;
   margin: 0;
 }
 
@@ -254,27 +251,6 @@ body {
   border-color: #5e6c84;
 }
 
-/* 2nd Project */
-
-.wrapper-3 {
-  width: 327px;
-  padding: 16px;
-  margin: 0 24px;
-  margin-bottom: 88px;
-  background-color: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-}
-
-.multi-post-stories {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
-  margin: 0;
-}
-
 /* About Myself */
 
 .wrapper-about {
@@ -313,9 +289,8 @@ body {
 }
 
 .icons-about {
-  min-width: 696px;
   list-style: none;
-  display: table;
+  display: flex;
   margin: 16px 0 24px 0;
 }
 
@@ -403,8 +378,6 @@ body {
 }
 
 .contact-title {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -414,8 +387,6 @@ body {
 }
 
 .content-contact {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
@@ -451,7 +422,6 @@ textarea {
 }
 
 .view-contact {
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -633,38 +603,12 @@ textarea {
     color: #7a869a;
   }
 
-  .content-2 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
-    margin: 8px 0 12px 0;
-  }
-
   .btns {
     font-weight: 500;
     font-size: 12px;
   }
 
-  /* .Multi-Post-Stories-1 */
-
-  .wrapper-3 {
-    padding: 16px;
-    margin: 0 24px;
-    border-radius: 16px;
-  }
-
   /* About Myself */
-
-  .wrapper-about {
-    width: 100%;
-    padding: 24px;
-    margin-top: 114px;
-    padding-top: 114px;
-    background-color: #fff;
-    border: 1px solid #dfe1e6;
-    border-top-right-radius: 100px;
-  }
 
   .icons-about {
     list-style: none;
@@ -680,21 +624,5 @@ textarea {
 
   .wrapper-contact {
     border-top-left-radius: 80px;
-  }
-
-  .name-contact {
-    width: 100%;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #cfd8dc;
-  }
-
-  textarea {
-    resize: none;
-    padding: 15px;
-    min-height: 170px;
-    border-radius: 8px;
-    border: 1px solid #cfd8dc;
-    width: 100%;
   }
 }
