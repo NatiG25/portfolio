@@ -42,11 +42,6 @@ body {
   width: 100%;
 }
 
-/* .other-half {
-  grid-row: 1;
-  grid-column: 2;
-} */
-
 .half-cards2 {
   grid-column: 2;
 }
@@ -148,7 +143,7 @@ body {
 
 /* 1st Project */
 
-.tonic-media {
+.project-name {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -557,8 +552,7 @@ textarea {
   .info,
   .list-media,
   .content-media,
-  .btns-media,
-  .tonic-media {
+  .btns-media {
     display: none;
   }
 
@@ -568,6 +562,8 @@ textarea {
   }
 
   .cards-radious {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     margin: 80px 20px;
@@ -678,15 +674,12 @@ textarea {
     text-decoration: none;
   }
 
-  /* Tonic-1 */
+  /* 1st Project */
 
-  .tonic {
-    font-style: normal;
-    font-weight: bold;
+  .project-name {
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
-    margin: 12px 0 0 0;
   }
 
   .canopy {
