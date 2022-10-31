@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,17 +17,11 @@ body {
   background-color: #fff;
 }
 
-/* .wrapper-1 {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-} */
-
 .cards-radious {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin: 80px 20px;
-  padding: 16px;
+  padding: 16px 16px 40px 16px;
   display: flex;
   flex-direction: row;
   background-color: #fff;
@@ -64,7 +58,7 @@ body {
   margin-right: 32px;
   text-decoration: none;
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -201,17 +195,8 @@ body {
   border: solid black;
   border-radius: 8px;
   border-width: thin;
-  margin-bottom: 40px;
   margin-top: auto;
   border-color: #6070ff;
-}
-
-.view-about p {
-  padding: 10px;
-  border: solid black;
-  border-radius: 8px;
-  border-width: thin;
-  border-color: #396df2;
 }
 
 .language p {
@@ -293,9 +278,6 @@ body {
 /* About Myself */
 
 .wrapper-about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 22px;
   width: 100%;
   padding: 24px;
   margin-top: 114px;
@@ -303,11 +285,6 @@ body {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-top-right-radius: 100px;
-}
-
-.half-about {
-  grid-column: 1;
-  width: 447px;
 }
 
 .about {
@@ -318,7 +295,7 @@ body {
   color: #172b4d;
 }
 
-.content-about {
+.about-description {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -340,36 +317,6 @@ body {
   list-style: none;
   display: table;
   margin: 16px 0 24px 0;
-}
-
-.view-about {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin: 0;
-  color: #396df2;
-}
-
-.view-about :hover {
-  background-color: #6070ff;
-  color: #fff;
-  border-color: #6070ff;
-}
-
-.view-about :active {
-  background-color: #2230d2;
-  color: #fff;
-  border-color: #2230d2;
-}
-
-.view-about :disabled {
-  background-color: #e5e5e5;
-  color: #5e6c84;
-  border-color: #5e6c84;
 }
 
 .language {
@@ -444,22 +391,19 @@ body {
 /* Contact */
 
 .wrapper-contact {
-  padding: 142px 319px 127px 320px;
+  padding: 5rem 2rem;
   border-top-left-radius: 100px;
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
 .background-contact {
-  background-repeat: no-repeat;
-  background-image: url(image/contact-background.svg);
   background-color: #6070ff;
-  background-size: 100%;
 }
 
 .contact-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -470,7 +414,7 @@ body {
 }
 
 .content-contact {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -482,26 +426,31 @@ body {
 
 .list-form li {
   list-style: none;
-  margin: 27px auto;
+  margin: 27px 0;
 }
 
 .name-contact {
   height: 48px;
-  min-width: 447px;
   padding: 15px;
-  border: none;
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  color: #212529;
+  background-color: #fff;
+  width: 100%;
 }
 
 textarea {
-  min-width: 447px;
-  min-height: 170px;
   resize: none;
   padding: 15px;
-  border: none;
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  color: #212529;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
 }
 
 .view-contact {
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -549,7 +498,6 @@ textarea {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     margin: 80px 20px;
-    padding: 16px;
   }
 
   .logo {
@@ -731,7 +679,6 @@ textarea {
   /* Contacts */
 
   .wrapper-contact {
-    padding: 103px 24px 0 24px;
     border-top-left-radius: 80px;
   }
 
