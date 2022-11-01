@@ -51,7 +51,7 @@ img {
 }
 
 .nav-mobile-link:hover {
-  color: #6070ff;
+  color: #7f8cff;
 }
 
 .nav-icon {
@@ -541,6 +541,7 @@ textarea {
   }
 
   .nav_header {
+    color: #7f8cff;
     position: fixed;
     bottom: 0;
     left: 0;
