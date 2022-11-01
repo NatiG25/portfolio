@@ -4,39 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portifolio - Job Search</title>
+    <title>Portifolio</title>
     <link rel="stylesheet" href="styles/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
-    />
-    <script
-      src="https://kit.fontawesome.com/04970764d6.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" media="(min-width: 992px)" href="styles/desktop.css">
-    <link rel="stylesheet" media="(max-width: 992px)" href="styles/mobile.css">
-    <link rel="stylesheet" href="styles/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">My Logo</a>      
-      <div class="menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <header>
+      <nav class="nav_header">
+        <a href="#" class="logo">Nati</a>      
+        <div class="menu">
+          <i class="fa-solid fa-cubes-stacked" id="menu-app"></i>
+        </div>
+        <div class="nav-menu" id="nav_menu">
+          <ul class="nav-list grid">
+              <li class="nav-item">
+                  <a href="#" class="nav-mobile-link">
+                      <i class="fa-solid fa-house nav-icon"></i> Home
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="#about" class="nav-mobile-link">
+                      <i class="fa-solid fa-user nav-icon"></i> About
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="#skills" class="nav-mobile-link">
+                      <i class="fa-solid fa-file nav-icon"></i> Skills
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="#portifolio" class="nav-mobile-link">
+                      <i class="fa-solid fa-briefcase nav-icon"></i> Portifolio
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="#contact" class="nav-mobile-link">
+                      <i class="fa-solid fa-message nav-icon"></i> Contact me
+                  </a>
+              </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav-close" id="nav_close"></i>
       </div>
-      <ul class="info">
-        <li><a href="#portfolio" class="nav-link">Portifolio</a></li>
-        <li><a href="#about" class="nav-link" >About</a></li>
-        <li><a href="#contact" class="nav-link" >Contact</a></li>
-      </ul>
+        <ul class="info">
+          <li><a href="#portifolio" class="nav-link">Portifolio</a></li>
+          <li><a href="#about" class="nav-link" >About</a></li>
+          <li><a href="#contact" class="nav-link" >Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section class="wrapper-1 background intro-radious">
+      <section class="background intro-radious">
         <h1 class="head-title">
-          I’m Temesgen <br />
+          I’m Nati <br />
           Glad to see you!
         </h1>
         <p class="content">
@@ -45,55 +66,31 @@
           you see and have a project you need coded, don’t hestiate to contact
           me.
         </p>
-        <h4 class="connect">LET’S CONNECT</h4>
-        <ul class="icons">
-          <li>
-            <a href="https://twitter.com/NatiG255"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/NatiG25"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/natigorgis/"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@nati.g5684"><i class="fab fa-medium-m"></i></a>
-          </li>
-        </ul>
-      </section>
-      <!-- Riyadh Season -->
+      <a href="#about" class="connect">
+         Contact me <i class="fa-solid fa-message"></i>
+      </a>
 
-      <section id="portfolio" class="wrapper-1 cards-radious">
-        <div class="half-cards">
-        <a href="#" class="card-img">
-          <img src="image/SpaceTravelers.png" alt="Project-preview-1" />
-        </a>
-        <a href="#" class="media-img">
-          <img src="image/SpaceTravelers.png" alt="Project-preview-1" />
-        </a>
-      </div>
-      <div class="other-half">
-        <h2 class="tonic">Space Travelers</h2>
-        <h2 class="tonic-media">Space Travelers</h2>
+      </section>
+      <!-- 1st project -->
+
+      <section id="portifolio" class="cards-radious">
+          <a href="#">
+            <img src="image/SpaceTravelers.png" alt="Project-preview-1" />
+          </a>
+      <div>
+        <h2 class="project-name">Space Travelers</h2>
 
         <div class="list">
           <h3 class="canopy">CANOPY</h3>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
         </div>
-        <div class="list-media">
-          <h3 class="canopy">CANOPY</h3>
-          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
-          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
-        </div>
-        <p class="content-2">
+
+        <p class="content">
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
         </p>
-        <p class="content-media">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
+
         <ul class="btns">
           <li>
             <p>html</p>
@@ -105,56 +102,31 @@
             <p>javascript</p>
           </li>
         </ul>
-        <ul class="btns-media">
-          <li>
-            <p>html</p>
-          </li>
-          <li>
-            <p>css</p>
-          </li>
-          <li>
-            <p>javascript</p>
-          </li>
-        </ul>
+
         <a href="#" class="view"><p>See Project</p></a>
       </div>
       </section>
 
-      <!-- BudgetApp -->
+      <!-- 2nd Project -->
 
-      <section class="wrapper-1 cards-radious reverse">
-        <div class="half-cards2">
-        <a href="#" class="card-img">
+      <section class="cards-radious reverse">
+        <a href="#">
           <img src="image/BudgetApp.png" alt="Project-preview-2" />
         </a>
-        <a href="#" class="media-img" >
-          <img src="image/BudgetApp.png" alt="Project-preview-2" />
-        </a>
-        </div>
-        <div class="other-half2">
-        <h2 class="tonic">
-          BudgetApp </h2>
-        <h2 class="tonic-media">
-          BudgetApp
-        </h2>
+        <div>
+        <h2 class="project-name">BudgetApp </h2>
 
         <div class="list">
           <h3 class="canopy">LIST</h3>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
         </div>
-        <div class="list-media">
-          <h3 class="canopy">LIST</h3>
-          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Full Stack Dev</p></a>
-          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
-        </div>
-        <p class="content-2">
+
+        <p class="content">
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
         </p>
-        <p class="content-media">
-          Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
-        </p>
+
         <ul class="btns">
           <li>
             <p>html</p>
@@ -166,70 +138,33 @@
             <p>javascript</p>
           </li>
         </ul>
-        <ul class="btns-media">
-          <li>
-            <p>html</p>
-          </li>
-          <li>
-            <p>Ruby on rails</p>
-          </li>
-          <li>
-            <p>css</p>
-          </li>
-          <li>
-            <p>javascript</p>
-          </li>
-        </ul>
+
         <a href="#" class="view"><p>See Project</p></a>
       </div>
+    </div>
       </section>
       
-      <!-- We Fly Digital -->
+      <!-- 3rd project -->
 
-      <section class="wrapper-1 cards-radious">
-        <div class="half-cards">
-        <a href="#" class="card-img">
+      <section class="cards-radious">
+        <a href="#">
           <img src="image/WeFlyDigital.png" alt="Project-preview-3" />
         </a>
-        <a href="#" class="media-img">
-          <img src="image/WeFlyDigital.png" alt="Project-preview-3" />
-        </a>
-        </div>
-        <div class="other-half">
-        <h2 class="tonic">We Fly Digital</h2>
-        <h2 class="tonic-media">We Fly Digital</h2>
+        <div>
+        <h2 class="project-name">We Fly Digital</h2>
 
         <div class="list">
           <h3 class="canopy">Fly</h3>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
         </div>
-        <div class="list-media">
-          <h3 class="canopy">BOOKS</h3>
-          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Full Stack Dev</p></a>
-          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
-        </div>
 
-        <p class="content-2">
+        <p class="content">
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
         </p>
-        <p class="content-media">
-          Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
-        </p>
 
         <ul class="btns">
-          <li>
-            <p>html</p>
-          </li>
-          <li>
-            <p>css</p>
-          </li>
-          <li>
-            <p>javascript</p>
-          </li>
-        </ul>
-        <ul class="btns-media">
           <li>
             <p>html</p>
           </li>
@@ -253,52 +188,29 @@
       </div>
       </section>
 
-      <!-- MovieSpace -->
+      <!-- 4th project -->
 
-      <section class="wrapper-1 cards-radious">
-        <div class="half-cards2">
-        <a href="#" class="card-img">
+      <section class="cards-radious reverse">
+        <a href="#">
           <img src="image/MovieSpace.png" alt="Project-preview-4" />
         </a>
-        <a href="#" class="media-img">
-          <img src="image/MovieSpace.png" alt="Project-preview-4" />
-        </a>
-        </div>
-        <div class="other-half2">
-        <h2 class="tonic">
+        <div>
+        <h2 class="project-name">
           MovieSpace
         </h2>
-        <h2 class="tonic-media">MovieSpace</h2>
 
         <div class="list">
-          <h3 class="canopy">CANOPY</h3>
-          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Back End Dev</p></a>
-          <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2015</p></a>
-        </div>
-        <div class="list-media">
           <h3 class="canopy">Movie</h3>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; Lead Developer</p></a>
           <a href="#" class="date"><p><i class="fa fa-circle"></i>&#160; 2018</p></a>
         </div>
 
-        <p class="content-2">
+        <p class="content">
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
         </p>
-        <p class="content-media">
-          A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.        </p>
+
         <ul class="btns">
-          <li>
-            <p>html</p>
-          </li>
-          <li>
-            <p>css</p>
-          </li>
-          <li>
-            <p>javascript</p>
-          </li>
-        </ul>
-        <ul class="btns-media">
           <li>
             <p>html</p>
           </li>
@@ -318,13 +230,12 @@
 
       <!-- About Myself -->
 
-      <section id="about" class="wrapper-about wrapper-1">
-        <div class="half-about">
+      <section id="about" class="wrapper-about" >
         <h2 class="about">
           About <br />
           Myself
         </h2>
-        <div class="content-about">
+        <div class="about-description">
           <p>
             Hello I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
@@ -335,20 +246,19 @@
         <h4 class="connect">LET’S CONNECT</h4>
         <ul class="icons-about">
           <li>
-            <a href="https://twitter.com/NatiG255"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/NatiG255" target="_blank"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="https://github.com/NatiG25"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/NatiG25" target="_blank"><i class="fab fa-github"></i></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/natigorgis/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/natigorgis/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </li>
           <li>
-            <a href="https://medium.com/@nati.g5684"><i class="fab fa-medium-m"></i></a>
+            <a href="https://medium.com/@nati.g5684" target="_blank"><i class="fab fa-medium-m"></i></a>
           </li>
         </ul>
-        <a href="#" class="view-about"><p>Get my resume</p></a>
-      </div>
+        <a href="#" class="view"><p>Get my resume</p></a>
 
         <!-- Langguages -->
 
@@ -433,7 +343,6 @@
         </form>
       </footer>
     </main>
-    <script src="script/script.js"></script>
-    <script src="script/pop.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
