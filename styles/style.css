@@ -22,6 +22,7 @@ a {
   text-decoration: none;
 }
 
+.nav-menu,
 .menu {
   display: none;
 }
@@ -29,6 +30,45 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.nav-list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav-mobile-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+  color: #172b4d;
+}
+
+.nav-mobile-link:hover {
+  color: #6070ff;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+.nav-close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #172b4d;
+}
+
+.nav-close:hover {
+  color: red;
 }
 
 .intro-radious {
@@ -460,6 +500,23 @@ textarea {
 }
 
 @media screen and (max-width: 700px) {
+  .nav-menu {
+    display: block;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+
+  .show-menu {
+    bottom: 0;
+  }
+
   .intro-radious {
     margin-bottom: 80px;
     padding: 100px 40px 150px 40px;
@@ -489,8 +546,18 @@ textarea {
     left: 0;
   }
 
+  .menu {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
   .menu i {
     color: #6070ff;
+  }
+
+  #menu-app:hover {
+    color: #172b4d;
   }
 
   .bar {
@@ -503,11 +570,6 @@ textarea {
   }
 
   /* Active classes for mobile  */
-  .menu {
-    display: block;
-    cursor: pointer;
-    padding: 1rem;
-  }
 
   .info {
     position: fixed;
@@ -523,15 +585,6 @@ textarea {
     opacity: 0.9;
   }
 
-  .info.active {
-    left: 0;
-    display: flex;
-    align-items: flex-start;
-    padding: 5rem 2rem;
-    gap: 1rem;
-    list-style: none;
-  }
-
   .nav-link {
     color: #fff;
     font-weight: 600;
@@ -539,24 +592,6 @@ textarea {
     line-height: 44px;
     z-index: 2;
     opacity: 10;
-  }
-
-  .menu.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-    background-color: white;
-  }
-
-  .menu.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-    background-color: white;
-  }
-
-  .menu.active {
-    z-index: 2;
   }
 
   .content {
