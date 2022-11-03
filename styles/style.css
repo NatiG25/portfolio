@@ -157,6 +157,7 @@ img {
   display: none;
 }
 
+/* ==== NAV ==== */
 .nav-list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -420,6 +421,58 @@ img {
   border-color: #5e6c84;
 }
 
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button-icon {
+  font-size: 1rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ==== PORTFOLIO ==== */
+.portfolio-container {
+  overflow: initial;
+}
+
+.portfolio-content {
+  padding: 0 1.5rem;
+}
+
+.portfolio-img {
+  width: 265px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.portfolio-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio-description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio-button:hover .button-icon {
+  transform: translateX(0.25rem);
+}
+
 /* About Myself */
 
 .wrapper-about {
@@ -619,7 +672,7 @@ textarea {
   justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 786px) {
   .nav-menu {
     display: block;
     position: fixed;
