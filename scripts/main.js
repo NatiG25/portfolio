@@ -1,3 +1,5 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
 const navClose = document.getElementById('nav_close');
 const navMenu = document.getElementById('nav_menu');
 const menuApp = document.getElementById('menu-app');
@@ -13,3 +15,17 @@ navClose.addEventListener('click', () => {
 document.querySelectorAll('.nav-mobile-link').forEach((n) => n.addEventListener('click', () => {
   navMenu.classList.remove('show-menu');
 }));
+
+// ==== PORTFOLIO SWIPER ====
+let swiper = new Swiper(".portfolio-container", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

@@ -112,7 +112,7 @@ img {
 
 /* ==================== REUSABLE CSS CLASSES ==================== */
 .section {
-  padding: 2rem 0 4rem;
+  padding: 2rem 1rem 4rem 1rem;
 }
 
 .section-title {
@@ -157,7 +157,7 @@ img {
   display: none;
 }
 
-/* ==== NAV ==== */
+/* ==================== NAV ==================== */
 .nav-list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -445,7 +445,7 @@ img {
   align-items: center;
 }
 
-/* ==== PORTFOLIO ==== */
+/* ==================== PORTFOLIO ==================== */
 .portfolio-container {
   overflow: initial;
 }
@@ -473,7 +473,39 @@ img {
   transform: translateX(0.25rem);
 }
 
-/* About Myself */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '' !important;
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -0.2rem !important;
+}
+
+.swiper-button-next {
+  right: -0.2rem !important;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none !important;
+}
+
+/* ==================== ABOUT ==================== */
 
 .wrapper-about {
   width: 100%;
@@ -579,7 +611,7 @@ img {
   color: #000;
 }
 
-/* Contact */
+/* ==================== CONTACT ==================== */
 
 .wrapper-contact {
   padding: 5rem 2rem;

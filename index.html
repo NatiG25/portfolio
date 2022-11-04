@@ -234,10 +234,10 @@
         <h2 class="section-title">Portfolio</h2>
         <span class="section-subtitle">Most recent work</span>
 
-        <div class="portfolio-container container">
-          <div>
+        <div class="portfolio-container container swiper">
+          <div class="swiper-wrapper">
                       <!-- PORTFOLIO 1 -->
-            <div class="portfolio-content grid">
+            <div class="portfolio-content grid swiper-slide">
               <img src="image/SpaceTravelers.png" class="portfolio-img" alt="Project-preview-1" />
               <div class="portfolio-data">
                 <h3 class="portfolio-title">Space Travelers</h3>
@@ -254,7 +254,7 @@
               </div>
             </div>
                         <!-- PORTFOLIO 2 -->
-            <div class="portfolio-content grid">
+            <div class="portfolio-content grid swiper-slide">
               <img src="image/BudgetApp.png" class="portfolio-img" alt="Project-preview-2" />
               <div class="portfolio-data">
                 <h3 class="portfolio-title">BudgetApp</h3>
@@ -270,7 +270,7 @@
               </div>
             </div>
                         <!-- PORTFOLIO 3 -->
-            <div class="portfolio-content grid">
+            <div class="portfolio-content grid swiper-slide">
               <img src="image/WeFlyDigital.png" class="portfolio-img" alt="Project-preview-3" />
               <div class="portfolio-data">
                 <h3 class="portfolio-title">We Fly Digital</h3>
@@ -287,6 +287,13 @@
               </div>
             </div>
           </div>
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-angle-right swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-angle-left swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
       </section>
       <!-- About Myself -->
@@ -404,7 +411,6 @@
         </form>
       </footer>
     </main>
-    <script src="/scripts/main.js"></script>
-    <script src="/scripts/swiper-bundle.min.js"></script>
+    <script src="/scripts/main.js" type="module"></script>
   </body>
 </html>
