@@ -29,3 +29,13 @@ let swiper = new Swiper(".portfolio-container", {
     clickable: true,
   },
 });
+
+// ==== TESTIMONIAL ====
+let swiperTestimonial = new Swiper(".testimonial-container", {
+  cssMode: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

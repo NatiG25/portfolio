@@ -451,11 +451,12 @@ img {
 }
 
 .portfolio-content {
-  padding: 0 1.5rem;
+  padding: 0 3rem;
 }
 
 .portfolio-img {
   width: 265px;
+  height: 150px;
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -503,6 +504,46 @@ img {
 .swiper-button-next,
 .swiper-pagination-bullet {
   outline: none !important;
+}
+
+/* ==================== TESTIMONIAL ==================== */
+.testimonial-data,
+.testimonial-header {
+  display: flex;
+}
+
+.testimonial-data {
+  justify-content: space-between;
+  margin-bottom: var(--mb-1);
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: var(--mb-0-75);
+}
+
+.testimonial-name {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.testimonial-role {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.testimonial-description {
+  margin-bottom: var(--mb-2-5);
+}
+
+.testimonial-icon-star {
+  color: var(--first-color);
+}
+
+.swiper-container .swiper-pagination-testimonial {
+  bottom: 0;
 }
 
 /* ==================== ABOUT ==================== */
@@ -655,7 +696,7 @@ img {
   border: 1px solid #ced4da;
   color: #212529;
   background-color: #fff;
-  width: 100%;
+  min-width: 45rem;
 }
 
 textarea {
@@ -867,5 +908,9 @@ textarea {
 
   .wrapper-contact {
     border-top-left-radius: 80px;
+  }
+
+  .name-contact {
+    min-width: 20rem;
   }
 }
