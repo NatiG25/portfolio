@@ -1,4 +1,4 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 
 const navClose = document.getElementById('nav_close');
 const navMenu = document.getElementById('nav_menu');
@@ -17,25 +17,25 @@ document.querySelectorAll('.nav-mobile-link').forEach((n) => n.addEventListener(
 }));
 
 // ==== PORTFOLIO SWIPER ====
-let swiper = new Swiper(".portfolio-container", {
+const swiper = new Swiper('.portfolio-container', {
   cssMode: true,
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
 });
 
 // ==== TESTIMONIAL ====
-let swiperTestimonial = new Swiper(".testimonial-container", {
+const swiperTestimonial = new Swiper('.testimonial-container', {
   cssMode: true,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
 });
