@@ -17,7 +17,7 @@ document.querySelectorAll('.nav-mobile-link').forEach((n) => n.addEventListener(
 }));
 
 // ==== PORTFOLIO SWIPER ====
-const swiper = new Swiper('.portfolio-container', {
+const swiperPortfolio = new Swiper('.portfolio-container', {
   cssMode: true,
   loop: true,
   navigation: {
@@ -32,10 +32,18 @@ const swiper = new Swiper('.portfolio-container', {
 
 // ==== TESTIMONIAL ====
 const swiperTestimonial = new Swiper('.testimonial-container', {
-  cssMode: true,
+  // cssMode: true,
+  gradCursor: true,
   loop: true,
+  spaceBetween: 48,
+
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
   },
 });

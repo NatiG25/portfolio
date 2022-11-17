@@ -507,6 +507,10 @@ img {
 }
 
 /* ==================== TESTIMONIAL ==================== */
+.testimonial-container {
+  cursor: pointer;
+}
+
 .testimonial-data,
 .testimonial-header {
   display: flex;
