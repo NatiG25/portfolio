@@ -25,7 +25,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /* ========== Font and typography ========== */
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
@@ -99,6 +99,8 @@ h4 {
 
 ul {
   list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 a {
@@ -192,9 +194,33 @@ img {
   color: red;
 }
 
+/* ==================== MAIN ==================== */
+
+.side-panel-container {
+  position: fixed;
+  align-items: flex-end;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  left: 0;
+  width: 7rem;
+}
+
+.side-panel-list-item {
+  padding: 25px 0;
+}
+
+.side-panel-hr {
+  align-self: center;
+  border: 0.5px solid;
+  margin: 6rem 0 0 42px;
+  transform: rotate(90deg);
+  width: 130px;
+}
+
 .intro-radious {
   border-bottom-left-radius: 100px;
-  margin-bottom: 142px;
   padding: 359px 260px 255px 260px;
   background-color: #fff;
 }
@@ -445,6 +471,15 @@ img {
   align-items: center;
 }
 
+.button-live {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button-live:hover {
+  color: #fff;
+}
+
 /* ==================== PORTFOLIO ==================== */
 .portfolio-container {
   overflow: initial;
@@ -476,7 +511,7 @@ img {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: '' !important;
+  content: "" !important;
 }
 
 .swiper-portfolio-icon {
@@ -586,12 +621,6 @@ img {
   color: #7f8cff;
 }
 
-.icons-about {
-  list-style: none;
-  display: flex;
-  margin: 16px 0 24px 0;
-}
-
 .language {
   font-style: normal;
   font-weight: 500;
@@ -664,17 +693,13 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.background-contact {
-  background-color: #6070ff;
+  color: #172b4d;
 }
 
 .contact-title {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  color: #fff;
   display: flex;
   justify-content: center;
 }
@@ -683,7 +708,6 @@ img {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  color: #ebebff;
   margin: 12px auto;
   text-align: center;
 }
@@ -714,15 +738,13 @@ textarea {
   height: auto;
 }
 
-.view-contact {
+.contact-button {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   display: flex;
   letter-spacing: 0.03em;
-  color: #6070ff;
   padding: 12px 16px;
-  background-color: #fff;
   border: 1px solid #fff;
   border-radius: 8px;
   transition: 0.1s ease-out;
@@ -768,7 +790,6 @@ textarea {
   }
 
   .intro-radious {
-    margin-bottom: 80px;
     padding: 100px 40px 150px 40px;
   }
 
@@ -894,14 +915,6 @@ textarea {
   .btns {
     font-weight: 500;
     font-size: 12px;
-  }
-
-  /* About Myself */
-
-  .icons-about {
-    list-style: none;
-    display: flex;
-    margin: 16px 0 24px 0;
   }
 
   .languages-about {
