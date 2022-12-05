@@ -19,7 +19,9 @@
   <body>
     <header>
       <nav class="nav_header">
-        <a href="#" class="logo">Nati</a>
+        <a href="#" class="logo">
+          <i class="fa-solid fa-n"></i>
+        </a>
         <div class="menu">
           <i class="fa-solid fa-cubes-stacked" id="menu-app"></i>
         </div>
@@ -36,12 +38,12 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav-mobile-link">
-                <i class="fa-solid fa-file nav-icon"></i> Skills
+              <a href="#testimonial" class="nav-mobile-link">
+                <i class="fa-solid fa-file nav-icon"></i> Recommendations
               </a>
             </li>
             <li class="nav-item">
-              <a href="#portifolio" class="nav-mobile-link">
+              <a href="#portfolio" class="nav-mobile-link">
                 <i class="fa-solid fa-briefcase nav-icon"></i> Portifolio
               </a>
             </li>
@@ -54,28 +56,86 @@
           <i class="fa-solid fa-xmark nav-close" id="nav_close"></i>
         </div>
         <ul class="info">
-          <li><a href="#portifolio" class="nav-link">Portifolio</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="#portfolio" class="nav-link">Portifolio</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">Contactme</a>
+          </li>
+          <li>
+            <a href="assests/pdf/Resume .pdf" download=""
+            class="button button--flex button--small resume-button nav-link">
+            Resume
+            <i class="fa-solid fa-download button-icon"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="background intro-radious">
-        <h1 class="head-title">
-          I’m Nati <br />
-          Glad to see you!
+      <!-- INTRODUCTION -->
+      <section class="intro">
+        <small class="head-small-intro">Hi, my name is</small>
+        <h1 class="head-intro">
+          Nati Gebregorgis <br />
+          <span class="subhead-intro">I build things for the web.</span>
         </h1>
-        <p class="content">
+        <p class="description">
           I’m a software developer! I can help you build a product , feature or
           website Look through some of my work and experience! If you like what
           you see and have a project you need coded, don’t hestiate to contact
           me.
         </p>
-        <a href="#about" class="connect">
-          Contact me <i class="fa-solid fa-message"></i>
-        </a>
+      </section>
+      <!-- ABOUT ME -->
+      <section id="about" class="wrapper-about section">
+        <h2 class="section-title">
+          About me
+        </h2>
+        <span class="section-subtitle">My intoductions</span>
+        <div class="about-description">
+          <p>
+            Hey! My name is Nati and I enjoy building projects, preferably with a team considering 
+            that I'm able to speak in <span class="bold-text">four(Arabic, English, Amharic, Tigrigna) speaking languages</span>. 
+            Spent <span class="bold-text">1300+ hours</span> mastering algorithms, data structures, and full-stack development while simultaneously
+            developing projects with Ruby, Rails, JavaScript, React, and Redux during my time at Microverse.
+          </p>
+        </div>
+        <span>Here are a few technologies I'm comfortable with:</span>
+        <div class="list-tech">
+          <ul>
+            <li>
+              <i class="fa-solid fa-chevron-right tech-arrow-icon"></i>
+              JavaScript
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right tech-arrow-icon"></i>
+              React
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right tech-arrow-icon"></i>
+              MySQL
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <i class="fa-solid fa-chevron-right tech-arrow-icon"></i>
+              Ruby
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right tech-arrow-icon"></i>
+              Ruby On Rails
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right tech-arrow-icon"></i>
+              Git & Github
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- PORTFOLIO -->
@@ -102,14 +162,19 @@
                   SpaceX API.`
                 </p>
                 <a
-                  href="#"
+                  href="https://github.com/NatiG25/Space-Travels-Hub"
                   class="button button--flex button--small portfolio-button"
                 >
-                  Demo
+                  Source code
                   <i class="fa-solid fa-arrow-right button-icon"></i>
                 </a>
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a
+                href="https://spacehub1.netlify.app/"
+                class="button button--flex button--small button-live portfolio-button"
+              >
+                Live code
+                <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+              </a>
               </div>
             </div>
             <!-- PORTFOLIO 2 -->
@@ -127,14 +192,19 @@
                   that you can see how much money you spent and on what.`
                 </p>
                 <a
-                  href="#"
+                  href="https://github.com/NatiG25/budget-app"
                   class="button button--flex button--small portfolio-button"
                 >
-                  Demo
+                  Source code
                   <i class="fa-solid fa-arrow-right button-icon"></i>
                 </a>
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a
+                href="https://budget-app-nati.herokuapp.com/"
+                class="button button--flex button--small button-live portfolio-button"
+              >
+                Live code
+                <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+              </a>
               </div>
             </div>
             <!-- PORTFOLIO 3 -->
@@ -147,22 +217,25 @@
               <div class="portfolio-data">
                 <h3 class="portfolio-title">We Fly Digital</h3>
                 <p class="portfolio-description">
-                  `We Fly Digital is a responsive app that lists flight
-                  reservations. A user can select a specific airline, see the
-                  details page with its full description, and can click the
-                  "Reserve" button to reserve it. The user can also access the
-                  "Reserve" page from the navigation panel, and add or delete a
-                  reservation or airline.`
+                  `A responsive app that lists flight
+                  reservations. Users can select & reserve to a specific airline, by clicking the
+                  "Reserve" button. Users can also see all reservations through the
+                  "Reserve" page, and add or delete a reservation or airline.`
                 </p>
                 <a
-                  href="#"
+                  href="https://github.com/ibr5500/we_fly_digital_frontend"
                   class="button button--flex button--small portfolio-button"
                 >
-                  Demo
+                  Source code
                   <i class="fa-solid fa-arrow-right button-icon"></i>
                 </a>
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a
+                href="https://we-fly-digital.herokuapp.com/"
+                class="button button--flex button--small button-live portfolio-button"
+              >
+                Live code
+                <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+              </a>
               </div>
             </div>
           </div>
@@ -176,7 +249,7 @@
         </div>
       </section>
       <!-- TESTIMONTAL -->
-      <section class="testimonial section">
+      <section id="testimonial" class="testimonial section">
         <h2 class="section-title">Recommendations</h2>
         <span class="section-subtitle">People I've worked with</span>
 
@@ -238,102 +311,12 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <!-- About Myself -->
+      <!-- CONTACT ME -->
+      <section id="contact" class="wrapper-contact">
+        <h2 class="section-title">Contact me</h2>
+        <span class="section-subtitle">Get in touch</span>
 
-      <section id="about" class="wrapper-about">
-        <h2 class="about">
-          About <br />
-          Myself
-        </h2>
-        <div class="about-description">
-          <p>
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
-          </p>
-        </div>
-        <h4 class="connect">LET’S CONNECT</h4>
-        <ul class="icons-about">
-          <li>
-            <a href="https://twitter.com/NatiG255" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/NatiG25" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/natigorgis/" target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@nati.g5684" target="_blank"
-              ><i class="fab fa-medium-m"></i
-            ></a>
-          </li>
-        </ul>
-        <a href="#" class="view"><p>Get my resume</p></a>
-
-        <!-- Langguages -->
-
-        <div class="other-half">
-          <ul class="languages-about">
-            <li>
-              <a href="#" class="language"><h3>Langguages</h3></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-chevron-down"></i></a>
-            </li>
-          </ul>
-
-          <ul class="jhc">
-            <li>
-              <a href="#" class="snapshoot-5">
-                <img src="image/js.svg" alt="js" />
-                <p>JavaScript</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="snapshoot-5">
-                <img src="image/html.svg" alt="html" />
-                <p>HTML</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="snapshoot-5">
-                <img src="image/css.svg" alt="css" />
-                <p>CSS</p>
-              </a>
-            </li>
-          </ul>
-          <ul class="frameworks-about">
-            <li>
-              <a href="#" class="frameworks"><p>Frameworks</p></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-chevron-right"></i></a>
-            </li>
-          </ul>
-          <ul class="frameworks-about">
-            <li>
-              <a href="#" class="frameworks"><p>Skills</p></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-chevron-right"></i></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Contact Me -->
-
-      <section id="contact" class="wrapper-contact background-contact">
-        <h2 class="contact-title">Contact me</h2>
-
-        <p class="content-contact">
+        <p>
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
@@ -344,7 +327,7 @@
             <li>
               <label for="name"></label>
               <input
-                class="name-contact"
+                class="contact-input"
                 id="name"
                 type="text"
                 maxlength="30"
@@ -356,7 +339,7 @@
             <li>
               <label for="mail"></label>
               <input
-                class="name-contact"
+                class="contact-input"
                 id="email"
                 type="email"
                 required
@@ -376,10 +359,37 @@
             </li>
             <li id="error"></li>
             <li class="submit-button">
-              <button class="view-contact" type="submit">Get In Touch</button>
+              <a href="#" class="contact-button button" type="submit">Get In Touch</a>
             </li>
           </ul>
         </form>
+      </section>
+      <!-- Side Panel -->
+      <section class="side-panel-container">
+        <ul class="side-panel-icons">
+          <li class="side-panel-list-item">
+            <a href="https://twitter.com/NatiG255" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="side-panel-list-item">
+            <a href="https://github.com/NatiG25" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="side-panel-list-item">
+            <a href="https://www.linkedin.com/in/natigorgis/" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="side-panel-list-item">
+            <a href="https://medium.com/@nati.g5684" target="_blank"
+              ><i class="fab fa-medium-m"></i
+            ></a>
+          </li>
+        </ul>
+        <hr class="side-panel-hr">
+        <span class="side-panel-footer">Designed & Built by Nati Gebregorgis</span>
       </section>
     </main>
     <script src="/scripts/main.js" type="module"></script>
