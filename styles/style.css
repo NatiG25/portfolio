@@ -114,7 +114,7 @@ img {
 
 /* ==================== REUSABLE CSS CLASSES ==================== */
 .section {
-  padding: 2rem 1rem 4rem 1rem;
+  padding: 2rem 1rem 10% 1rem;
 }
 
 .section-title {
@@ -254,14 +254,11 @@ img {
   list-style: none;
   display: flex;
   margin: 16px 142px 16px 0;
+  align-items: center;
 }
 
 .info a {
   margin-right: 32px;
-  color: #344563;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
   line-height: 20px;
 }
 
@@ -283,12 +280,6 @@ img {
   list-style: none;
   background-color: white;
   width: 100%;
-}
-
-.background {
-  background-image: url(../image/header-shapes\ mobile.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .content {
@@ -589,106 +580,38 @@ img {
 
 .wrapper-about {
   width: 100%;
-  padding: 24px;
-  margin-top: 114px;
-  padding-top: 114px;
   background-color: #fff;
-  border: 1px solid #dfe1e6;
-  border-top-right-radius: 100px;
-}
-
-.about {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
+  padding: 0 19% 10% 19%;
 }
 
 .about-description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 12px auto;
+  margin-bottom: var(--mb-0-75);
 }
 
-.connect-about {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-}
-
-.language {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+.list-tech {
   display: flex;
-  color: #000;
-}
-
-.languages-about {
-  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  padding: 24px 0 24px 12px;
+  padding: 1rem 0 2rem 0;
 }
 
-.snapshoot-5 {
-  margin-left: 16px;
-  background-color: #f7f7f9;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  list-style: none;
+.tech-arrow-icon {
+  font-size: 0.7rem;
+  color: var(--first-color);
 }
 
-.snapshoot-5 img {
-  padding-left: 12px;
+.resume-button {
+  margin: 0.5rem 0;
 }
 
-.jhc {
-  list-style: none;
-  padding: 0;
-}
-
-.line {
-  margin-top: 7px;
-}
-
-.frameworks-about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding-right: 42px;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.frameworks {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  color: #000;
-  padding: 24px 0 24px 12px;
-}
-
-.fas {
-  color: #000;
+.resume-button:hover .button-icon {
+  transform: translateX(0.25rem);
 }
 
 /* ==================== CONTACT ==================== */
 
 .wrapper-contact {
-  padding: 5rem 2rem;
+  padding: 0 19% 10% 19%;
   border-top-left-radius: 100px;
   display: flex;
   align-items: center;
