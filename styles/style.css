@@ -124,13 +124,17 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   margin-bottom: var(--mb-3);
 }
 
 .section-title,
 .section-subtitle {
   text-align: center;
+}
+
+.bold-text {
+  color: var(--first-color-alt);
 }
 
 /* ==================== LAYOUT ==================== */
@@ -176,6 +180,7 @@ img {
   align-items: center;
   font-size: small;
   color: #172b4d;
+  text-align: center;
 }
 
 .nav-mobile-link:hover {
@@ -247,12 +252,14 @@ img {
 }
 
 .logo {
-  font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
   padding: 1rem;
-  margin-left: 2rem;
+  border: 1px solid var(--first-color-alt);
+  border-radius: 50%;
+  background-color: var(--first-color-alt);
+  color: #fff;
+  margin: 1rem;
 }
 
 .info {
@@ -297,7 +304,7 @@ img {
   width: 100%;
 }
 
-.content {
+.description {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -522,7 +529,7 @@ img {
 }
 
 .portfolio-button:hover .button-icon {
-  transform: translateX(0.25rem);
+  /* transform: translateX(0.25rem); */
 }
 
 .swiper-button-prev::after,
@@ -658,14 +665,6 @@ img {
   justify-content: center;
 }
 
-.content-contact {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  margin: 12px auto;
-  text-align: center;
-}
-
 .list-form li {
   list-style: none;
   margin: 27px 0;
@@ -726,6 +725,14 @@ textarea {
 }
 
 @media screen and (max-width: 786px) {
+  /* ==================== REUSABLE CSS CLASSES ==================== */
+
+  .section-subtitle {
+    font-size: var(--small-font-size);
+  }
+
+  /* ==================== MAIN ==================== */
+
   .side-panel-container {
     display: block;
     position: static;
@@ -748,7 +755,7 @@ textarea {
   .side-panel-footer {
     display: block;
     text-align: center;
-    margin: 1rem 0 4rem 0;
+    margin: 1rem 0 5.5rem 0;
   }
 
   .nav-menu {
@@ -781,7 +788,8 @@ textarea {
   }
 
   .logo {
-    margin: 0;
+    font-size: 15px;
+    margin: 0.5rem;
   }
 
   .head-title {
@@ -800,7 +808,8 @@ textarea {
   .menu {
     display: block;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0 1rem;
+    font-size: 1.4rem;
   }
 
   .menu i {
@@ -845,7 +854,7 @@ textarea {
     opacity: 10;
   }
 
-  .content {
+  .description {
     font-size: 16px;
     color: #344563;
     margin: 12px auto;
@@ -904,6 +913,10 @@ textarea {
 
   .wrapper-contact {
     border-top-left-radius: 80px;
+  }
+
+  .content-contact {
+    font-size: 16px;
   }
 
   .contact-input {
