@@ -159,6 +159,11 @@ img {
   display: none;
 }
 
+/* ==================== DISPLAY NONE CLASSES ==================== */
+.side-panel-footer {
+  display: none;
+}
+
 /* ==================== NAV ==================== */
 .nav-list {
   grid-template-columns: repeat(3, 1fr);
@@ -204,7 +209,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   left: 0;
-  width: 7rem;
+  width: 6.5rem;
 }
 
 .side-panel-list-item {
@@ -214,12 +219,12 @@ img {
 .side-panel-hr {
   align-self: center;
   border: 0.5px solid;
-  margin: 6rem 0 0 42px;
+  margin: 6rem 0 0 2rem;
   transform: rotate(90deg);
   width: 130px;
 }
 
-.intro-radious {
+.intro {
   border-bottom-left-radius: 100px;
   padding: 359px 260px 255px 260px;
   background-color: #fff;
@@ -252,6 +257,7 @@ img {
 
 .info {
   list-style: none;
+  color: var(--title-color);
   display: flex;
   margin: 16px 142px 16px 0;
   align-items: center;
@@ -262,14 +268,23 @@ img {
   line-height: 20px;
 }
 
-.head-title {
+.head-small-intro {
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.head-intro {
   font-style: normal;
   font-weight: bold;
-  color: #172b4d;
+  color: var(--title-color);
   margin: 0;
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.37px;
+}
+
+.subhead-intro {
+  color: var(--first-color);
 }
 
 .nav_header {
@@ -465,6 +480,7 @@ img {
 .button-live {
   background-color: #fff;
   color: var(--first-color);
+  margin-bottom: 3rem;
 }
 
 .button-live:hover {
@@ -472,6 +488,11 @@ img {
 }
 
 /* ==================== PORTFOLIO ==================== */
+
+.portfolio {
+  padding: 0 19% 10% 19%;
+}
+
 .portfolio-container {
   overflow: initial;
 }
@@ -485,6 +506,10 @@ img {
   height: 150px;
   border-radius: 0.5rem;
   justify-self: center;
+}
+
+.portfolio-data {
+  margin-bottom: var(--mb-0-75);
 }
 
 .portfolio-title {
@@ -533,6 +558,11 @@ img {
 }
 
 /* ==================== TESTIMONIAL ==================== */
+
+.testimonial {
+  padding: 0 19% 10% 19%;
+}
+
 .testimonial-container {
   cursor: pointer;
 }
@@ -602,6 +632,7 @@ img {
 
 .resume-button {
   margin: 0.5rem 0;
+  color: #fff;
 }
 
 .resume-button:hover .button-icon {
@@ -611,7 +642,7 @@ img {
 /* ==================== CONTACT ==================== */
 
 .wrapper-contact {
-  padding: 0 19% 10% 19%;
+  padding: 0 19% 0 19%;
   border-top-left-radius: 100px;
   display: flex;
   align-items: center;
@@ -640,14 +671,14 @@ img {
   margin: 27px 0;
 }
 
-.name-contact {
+.contact-input {
   height: 48px;
   padding: 15px;
   border-radius: 20px;
   border: 1px solid #ced4da;
   color: #212529;
   background-color: #fff;
-  min-width: 45rem;
+  min-width: 30rem;
 }
 
 textarea {
@@ -695,6 +726,31 @@ textarea {
 }
 
 @media screen and (max-width: 786px) {
+  .side-panel-container {
+    display: block;
+    position: static;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    margin-top: 7rem;
+  }
+
+  .side-panel-hr {
+    display: none;
+  }
+
+  .side-panel-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-panel-footer {
+    display: block;
+    text-align: center;
+    margin: 1rem 0 4rem 0;
+  }
+
   .nav-menu {
     display: block;
     position: fixed;
@@ -712,7 +768,7 @@ textarea {
     bottom: 0;
   }
 
-  .intro-radious {
+  .intro {
     padding: 100px 40px 150px 40px;
   }
 
@@ -850,7 +906,7 @@ textarea {
     border-top-left-radius: 80px;
   }
 
-  .name-contact {
+  .contact-input {
     min-width: 20rem;
   }
 }
