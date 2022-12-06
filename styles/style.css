@@ -302,6 +302,7 @@ img {
   list-style: none;
   background-color: white;
   width: 100%;
+  z-index: 5;
 }
 
 .description {
@@ -529,7 +530,7 @@ img {
 }
 
 .portfolio-button:hover .button-icon {
-  /* transform: translateX(0.25rem); */
+  transform: translateX(0.25rem);
 }
 
 .swiper-button-prev::after,
