@@ -163,12 +163,32 @@ img {
   display: none;
 }
 
-/* ==================== DISPLAY NONE CLASSES ==================== */
-.side-panel-footer {
-  display: none;
+/* ==================== NAV ==================== */
+.nav-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: white;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* ==================== NAV ==================== */
+.nav-bar {
+  list-style: none;
+  color: var(--title-color);
+  display: flex;
+  margin: 16px 142px 16px 0;
+  align-items: center;
+}
+
+.nav-bar a {
+  margin-right: 32px;
+  line-height: 20px;
+}
+
 .nav-list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -204,7 +224,7 @@ img {
   color: red;
 }
 
-/* ==================== MAIN ==================== */
+/* ==================== SIDE PANEL ==================== */
 
 .side-panel-container {
   position: fixed;
@@ -229,26 +249,18 @@ img {
   width: 130px;
 }
 
+.side-panel-footer {
+  display: block;
+  text-align: center;
+  margin: 4rem 0 -1.5rem 0;
+}
+
+/* ==================== MAIN ==================== */
+
 .intro {
   border-bottom-left-radius: 100px;
   padding: 359px 260px 255px 260px;
   background-color: #fff;
-}
-
-.cards-radious {
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  margin: 80px 20px;
-  padding: 16px 16px 40px 16px;
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  justify-content: space-evenly;
-  gap: 2rem;
-}
-
-.reverse {
-  flex-direction: row-reverse;
 }
 
 .logo {
@@ -260,19 +272,6 @@ img {
   background-color: var(--first-color-alt);
   color: #fff;
   margin: 1rem;
-}
-
-.info {
-  list-style: none;
-  color: var(--title-color);
-  display: flex;
-  margin: 16px 142px 16px 0;
-  align-items: center;
-}
-
-.info a {
-  margin-right: 32px;
-  line-height: 20px;
 }
 
 .head-small-intro {
@@ -294,17 +293,6 @@ img {
   color: var(--first-color);
 }
 
-.nav_header {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  background-color: white;
-  width: 100%;
-  z-index: 5;
-}
-
 .description {
   font-style: normal;
   font-weight: normal;
@@ -312,15 +300,6 @@ img {
   line-height: 28px;
   color: #344563;
   margin: 12px auto;
-}
-
-.connect {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  margin-bottom: 14px;
 }
 
 .fab,
@@ -332,134 +311,7 @@ img {
   float: left;
 }
 
-.icons {
-  list-style: none;
-  margin: 0;
-}
-
-/* 1st Project */
-
-.project-name {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
-  margin: 12px 0 0 0;
-  grid-column-start: 2;
-}
-
-.canopy {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  color: #344563;
-}
-
-.list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 12px 0 24px 0;
-  grid-column-start: 2;
-}
-
-.list p {
-  margin-right: 32px;
-}
-
-.date {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  color: #7a869a;
-}
-
-.content-media {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  margin: 0;
-  grid-column-start: 2;
-}
-
-.btns {
-  display: flex;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  list-style: none;
-  padding-left: 0;
-  margin: 24px 0 42px 0;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.view p {
-  padding: 10px;
-  border: solid black;
-  border-radius: 8px;
-  border-width: thin;
-  margin-top: auto;
-  border-color: #6070ff;
-}
-
-.language p {
-  margin-left: 16px;
-}
-
-.snapshoot-5 p {
-  padding-left: 16px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-}
-
-.frameworks p {
-  margin-left: 16px;
-}
-
-.btns li p {
-  background-color: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
-}
-
-.view {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  letter-spacing: 0.03em;
-  margin: 0;
-  color: #396df2;
-  grid-column-start: 2;
-}
-
-.view :hover {
-  background-color: #6070ff;
-  color: #fff;
-  border-color: #6070ff;
-}
-
-.view :active {
-  background-color: #2230d2;
-  color: #fff;
-  border-color: #2230d2;
-}
-
-.view :disabled {
-  background-color: #e5e5e5;
-  color: #5e6c84;
-  border-color: #5e6c84;
-}
+/* ==================== BUTTONS ==================== */
 
 .button {
   display: inline-block;
@@ -727,20 +579,18 @@ textarea {
 
 @media screen and (max-width: 786px) {
   /* ==================== REUSABLE CSS CLASSES ==================== */
-
   .section-subtitle {
     font-size: var(--small-font-size);
   }
 
-  /* ==================== MAIN ==================== */
-
+  /* ==================== SIDE PANEL ==================== */
   .side-panel-container {
     display: block;
     position: static;
     left: auto;
     bottom: auto;
     width: 100%;
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
 
   .side-panel-hr {
@@ -754,11 +604,10 @@ textarea {
   }
 
   .side-panel-footer {
-    display: block;
-    text-align: center;
     margin: 1rem 0 5.5rem 0;
   }
 
+  /* ==================== NAV ==================== */
   .nav-menu {
     display: block;
     position: fixed;
@@ -772,20 +621,30 @@ textarea {
     transition: 0.3s;
   }
 
+  .nav-header {
+    color: #7f8cff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+  }
+
+  .nav-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    z-index: 2;
+    opacity: 10;
+  }
+
+  /* ==================== MAIN ==================== */
   .show-menu {
     bottom: 0;
   }
 
   .intro {
     padding: 100px 40px 150px 40px;
-  }
-
-  .cards-radious {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    margin: 80px 20px;
   }
 
   .logo {
@@ -797,13 +656,6 @@ textarea {
     font-size: 40px;
     line-height: 52px;
     margin: 0;
-  }
-
-  .nav_header {
-    color: #7f8cff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
   }
 
   .menu {
@@ -821,18 +673,7 @@ textarea {
     color: #172b4d;
   }
 
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #6070ff;
-    border-radius: 20px;
-  }
-
-  /* Active classes for mobile  */
-
-  .info {
+  .nav-bar {
     position: fixed;
     left: -120%;
     top: 0;
@@ -846,72 +687,13 @@ textarea {
     opacity: 0.9;
   }
 
-  .nav-link {
-    color: #fff;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
-    z-index: 2;
-    opacity: 10;
-  }
-
   .description {
     font-size: 16px;
     color: #344563;
     margin: 12px auto;
   }
 
-  .connect {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
-    margin-bottom: 12px;
-  }
-
-  /* 1st Project */
-
-  .project-name {
-    font-size: 32px;
-    line-height: 44px;
-    color: #172b4d;
-  }
-
-  .canopy {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-  }
-
-  .list {
-    display: flex;
-    align-items: center;
-    margin: 12px 0;
-    justify-content: space-between;
-  }
-
-  .list p {
-    margin-right: 32px;
-  }
-
-  .date {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #7a869a;
-  }
-
-  .btns {
-    font-weight: 500;
-    font-size: 12px;
-  }
-
-  .languages-about {
-    margin: 24px 0 0 0;
-  }
-
-  /* Contacts */
-
+  /* ==================== NAV ==================== */
   .wrapper-contact {
     border-top-left-radius: 80px;
   }
