@@ -194,19 +194,6 @@ img {
   gap: 2rem;
 }
 
-.nav-mobile-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: small;
-  color: #172b4d;
-  text-align: center;
-}
-
-.nav-mobile-link:hover {
-  color: #7f8cff;
-}
-
 .nav-icon {
   font-size: 1.2rem;
 }
@@ -269,8 +256,8 @@ img {
   padding: 1rem;
   border: 1px solid var(--first-color-alt);
   border-radius: 50%;
-  background-color: var(--first-color-alt);
-  color: #fff;
+  background-color: #fff;
+  color: var(--first-color-alt);
   margin: 1rem;
 }
 
@@ -622,11 +609,19 @@ textarea {
   }
 
   .nav-header {
-    color: #7f8cff;
     position: fixed;
     bottom: 0;
     left: 0;
     box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+  }
+
+  .nav-mobile-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    color: var(--title-color);
+    text-align: center;
   }
 
   .nav-link {
