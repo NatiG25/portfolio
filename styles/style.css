@@ -495,40 +495,35 @@ img {
   align-items: center;
   flex-direction: column;
   color: #172b4d;
+  text-align: center;
 }
 
-.contact-title {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
+.form {
   display: flex;
-  justify-content: center;
-}
-
-.list-form li {
-  list-style: none;
-  margin: 27px 0;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-input {
   height: 48px;
   padding: 15px;
+  margin: 27px 0;
   border-radius: 20px;
   border: 1px solid #ced4da;
-  color: #212529;
   background-color: #fff;
   min-width: 30rem;
 }
 
-textarea {
+.contact-textarea {
   resize: none;
-  padding: 15px;
+  padding: 2rem;
+  height: 10rem;
+  margin: 27px 0;
   border-radius: 20px;
   border: 1px solid #ced4da;
   color: #212529;
   background-color: #fff;
   width: 100%;
-  height: auto;
 }
 
 .contact-button {
