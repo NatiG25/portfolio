@@ -511,7 +511,7 @@ img {
   border-radius: 20px;
   border: 1px solid #ced4da;
   background-color: #fff;
-  min-width: 30rem;
+  min-width: 45rem;
 }
 
 .contact-textarea {
@@ -554,10 +554,10 @@ img {
   border-color: #5e6c84;
 }
 
-.submit-button {
+/* .submit-button {
   display: flex;
   justify-content: center;
-}
+} */
 
 @media screen and (max-width: 786px) {
   /* ==================== REUSABLE CSS CLASSES ==================== */
