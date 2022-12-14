@@ -16,6 +16,20 @@
       referrerpolicy="no-referrer"
     />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-RYYW5W4D7X"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-RYYW5W4D7X");
+  </script>
   <body>
     <header>
       <nav class="nav-header">
@@ -457,7 +471,12 @@
           with it
         </p>
 
-        <form action="https://formspree.io/f/xeqnevwb" method="post" id="form" class="form">
+        <form
+          action="https://formspree.io/f/xeqnevwb"
+          method="post"
+          id="form"
+          class="form"
+        >
           <label for="name"></label>
           <input
             class="contact-input"
@@ -488,9 +507,9 @@
             placeholder="Write your message here"
           ></textarea>
           <div class="submit-button">
-            <button class="contact-button button" type="submit"
-              >Get In Touch</button
-            >
+            <button class="contact-button button" type="submit">
+              Get In Touch
+            </button>
           </div>
         </form>
       </section>
