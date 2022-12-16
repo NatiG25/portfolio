@@ -129,7 +129,8 @@ img {
 }
 
 .section-title,
-.section-subtitle {
+.section-subtitle,
+.skills {
   text-align: center;
 }
 
@@ -463,6 +464,12 @@ img {
 
 .about-description {
   margin-bottom: var(--mb-0-75);
+}
+
+.skills {
+  display: block;
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
 }
 
 .list-tech {
