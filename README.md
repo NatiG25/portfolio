@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portifolio
+# Portfolio
 
 > In this portfolio, I've listed a few of my most complex projects so far. An 'About Me' section, where I give a brief history about myself & what I can bring to the table. In addition to, recommendations from people I've worked with.
 
