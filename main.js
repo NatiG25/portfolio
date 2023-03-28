@@ -17,18 +17,18 @@ document.querySelectorAll('.nav-mobile-link').forEach((n) => n.addEventListener(
 }));
 
 // ==== PORTFOLIO SWIPER ====
-const swiperPortfolio = new Swiper('.portfolio-container', {
-  cssMode: true,
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
+// const swiperPortfolio = new Swiper('.portfolio-container', {
+//   cssMode: true,
+//   loop: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+// });
 
 // ==== TESTIMONIAL ====
 const swiperTestimonial = new Swiper('.testimonial-container', {
