@@ -338,7 +338,7 @@ img {
 /* ==================== PORTFOLIO ==================== */
 
 .portfolio {
-  padding: 0 19% 10% 19%;
+  padding: 0 8% 10% 8%;
 }
 
 .portfolio-container {
@@ -408,7 +408,7 @@ img {
 /* ==================== TESTIMONIAL ==================== */
 
 .testimonial {
-  padding: 0 19% 10% 19%;
+  padding: 0 8% 10% 8%;
 }
 
 .testimonial-container {
@@ -456,10 +456,10 @@ img {
 
 /* ==================== ABOUT ==================== */
 
-.wrapper-about {
+.about {
   width: 100%;
   background-color: #fff;
-  padding: 0 19% 10% 19%;
+  padding: 0 8% 10% 8%;
 }
 
 .about-description {
@@ -470,13 +470,14 @@ img {
   display: block;
   font-size: var(--h3-font-size);
   color: var(--title-color);
+  padding: 1rem;
 }
 
 .list-tech {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem 0 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
 }
 
 .tech-arrow-icon {
@@ -495,7 +496,7 @@ img {
 
 /* ==================== CONTACT ==================== */
 
-.wrapper-contact {
+.contact {
   padding: 0 19% 0 19%;
   border-top-left-radius: 100px;
   display: flex;
@@ -690,13 +691,17 @@ img {
     margin: 12px auto;
   }
 
+  .list-tech {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* ==================== TESTIMONIAL ==================== */
   .testimonial-description {
     margin-bottom: var(--mb-0-25);
   }
 
   /* ==================== CONTACTME ==================== */
-  .wrapper-contact {
+  .contact {
     border-top-left-radius: 80px;
   }
 
