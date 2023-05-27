@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://natig25.github.io/Portfolio/)
+[Live Demo Link](https://natig.me)
 
 ## Built With
 
