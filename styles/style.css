@@ -373,10 +373,15 @@ img {
   gap: 1.5rem;
   padding: 3rem 2rem;
   max-width: 80rem;
+  transition: var(--transition);
+}
+
+.portfolio-content:hover {
+  box-shadow: 0 0 50px #ccc;
 }
 
 .reverse {
-  flex-direction: row-reverse;
+  grid-row-start: 1;
 }
 
 .portfolio-img {
@@ -425,6 +430,8 @@ img {
 }
 
 .button-project {
+  background-color: #fff;
+  outline: none;
   border: solid 1px var(--first-color-alt);
   color: var(--first-color-alt);
   border-radius: var(--border-radius);
@@ -436,6 +443,9 @@ img {
   color: #fff;
   background-color: var(--first-color-alt);
 }
+
+/* ==================== POPUP ==================== */
+
 
 /* ==================== TESTIMONIAL ==================== */
 

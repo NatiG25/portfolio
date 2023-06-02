@@ -1,10 +1,12 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
+// NAV
 const navClose = document.getElementById("nav_close");
 const navMenu = document.getElementById("nav_menu");
 const menuApp = document.getElementById("menu-app");
+// PORTFOLIO
 const portfolioSection = document.querySelector(".portfolio-container");
-const portfolioContent = document.querySelector(".portfolio-content");
+const projectPopUp = document.querySelector(".project-popUp");
 
 const addShowClass = () => {
   navMenu.classList.add("show-menu");
@@ -87,8 +89,8 @@ const projects = [
   },
 ];
 
-const displayAllProjects = (projectsArr) => {
-  for (let i = 0; i < projectsArr.length; i++) {
+const displayAllProjects = (projects) => {
+  for (let i = 0; i < projects.length; i++) {
     if (i % 2 === 0) {
       portfolioSection.innerHTML += ` <div class="portfolio-content">
       <img
@@ -108,22 +110,22 @@ const displayAllProjects = (projectsArr) => {
           <li class="tech-item">${projects[i].tech[3]}</li>
           <li class="tech-item">${projects[i].tech[4]}</li>
         </ul>
-        <a 
-        href="" 
+        <button
+        id="${i}"
         class="button-project button--small"
         >
         See project
-        </a>
+        </button>
       </div>
     </div>`;
     } else {
-      portfolioSection.innerHTML += ` <div class="portfolio-content reverse">
+      portfolioSection.innerHTML += ` <div class="portfolio-content">
       <img
         src=${projects[i].img}
         class="portfolio-img"
         alt="Project-preview"
       />
-      <div class="portfolio-data">
+      <div class="portfolio-data reverse">
         <h3 class="portfolio-title">${projects[i].title}</h3>
         <p class="portfolio-description">
         ${projects[i].description}
@@ -135,19 +137,72 @@ const displayAllProjects = (projectsArr) => {
           <li class="tech-item">${projects[i].tech[3]}</li>
           <li class="tech-item">${projects[i].tech[4]}</li>
         </ul>
-        <a 
-        href="" 
+        <button
+        id="${i}"
         class="button-project button--small"
         >
         See project
-        </a>
+        </button>
       </div>
     </div>`;
     }
   }
 };
 
+const popUp = (project, id) => {
+  projectPopUp.innerHTML = `
+  <section class="popUp-container">
+    <div class="popUp-content">
+      <img
+        src=${project[id].img}
+        class="popUp-img"
+        alt="Project-preview"
+      />
+      <div class="popUp-data">
+        <h3 class="popUp-title">${project[id].title}</h3>
+        <p class="popUp-description">
+        ${project[id].description}
+        </p>
+        <ul class="popUp-tech-list">
+          <li class="tech-item">${project[id].tech[0]}</li>
+          <li class="tech-item">${project[id].tech[1]}</li>
+          <li class="tech-item">${project[id].tech[2]}</li>
+          <li class="tech-item">${project[id].tech[3]}</li>
+          <li class="tech-item">${project[id].tech[4]}</li>
+        </ul>
+        <a
+          href=${project[id].sourceLink}
+          target="_blank"
+          class="button button--flex button--small portfolio-button"
+          >
+          Source code
+          <i class="fa-solid fa-arrow-right button-icon"></i>
+          </a>
+        <a
+          href=${project[id].liveLink}
+          target="_blank"
+          class="button button--flex button--small button-live portfolio-button"
+          >
+          Live code
+          <i
+            class="fa-solid fa-arrow-up-right-from-square button-icon"
+          ></i>
+        </a> 
+      </div>
+    </section>
+  `
+}
+
 displayAllProjects(projects);
+
+const displayPopUps = () => {
+  const buttonProject = document.querySelectorAll(".button-project");
+  buttonProject.forEach(button => {
+    button.addEventListener('click', () => popUp(projects, button.id))
+  });
+}
+
+displayPopUps();
 
 // ==== TESTIMONIAL ====
 const swiperTestimonial = new Swiper(".testimonial-container", {
@@ -160,24 +215,3 @@ const swiperTestimonial = new Swiper(".testimonial-container", {
     dynamicBullets: true,
   },
 });
-
-{
-  /* <a
-href=${projects[i].sourceLink}
-target="_blank"
-class="button button--flex button--small portfolio-button"
->
-Source code
-<i class="fa-solid fa-arrow-right button-icon"></i>
-</a>
-<a
-href=${projects[i].liveLink}
-target="_blank"
-class="button button--flex button--small button-live portfolio-button"
->
-Live code
-<i
-  class="fa-solid fa-arrow-up-right-from-square button-icon"
-></i>
-</a>  */
-}
