@@ -60,8 +60,7 @@
 
   /* ========== border, transition ========== */
   --border-radius: 8px;
-  --transition: 0.5s ease-in-out
-
+  --transition: 0.5s ease-in-out;
 }
 
 /* Font size for large devices */
@@ -116,6 +115,17 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+main {
+  transition: var(--transition);
+}
+
+main.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+  transition: var(--transition);
 }
 
 /* ==================== REUSABLE CSS CLASSES ==================== */
@@ -362,6 +372,14 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   gap: 2.5rem;
+  transition: var(--transition);
+}
+
+.portfolio-container.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+  transition: var(--transition);
 }
 
 .portfolio-content {
@@ -445,7 +463,24 @@ img {
 }
 
 /* ==================== POPUP ==================== */
+.popUp-container {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+}
 
+.popUp-container.active {
+  visibility: visible;
+  opacity: 1;
+  transition: var(--transition);
+}
 
 /* ==================== TESTIMONIAL ==================== */
 
