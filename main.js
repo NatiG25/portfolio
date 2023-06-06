@@ -1,12 +1,13 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
+const mainBody = document.querySelector("#main-body");
 // NAV
 const navClose = document.getElementById("nav_close");
 const navMenu = document.getElementById("nav_menu");
 const menuApp = document.getElementById("menu-app");
 // PORTFOLIO
 const portfolioSection = document.querySelector(".portfolio-container");
-const projectPopUp = document.querySelector(".project-popUp");
+const popUpContainer = document.querySelector(".popUp-container");
 
 const addShowClass = () => {
   navMenu.classList.add("show-menu");
@@ -150,8 +151,7 @@ const displayAllProjects = (projects) => {
 };
 
 const popUp = (project, id) => {
-  projectPopUp.innerHTML = `
-  <section class="popUp-container">
+  popUpContainer.innerHTML = `
     <div class="popUp-content">
       <img
         src=${project[id].img}
@@ -163,7 +163,7 @@ const popUp = (project, id) => {
         <p class="popUp-description">
         ${project[id].description}
         </p>
-        <ul class="popUp-tech-list">
+        <ul class="portfolio-tech-list">
           <li class="tech-item">${project[id].tech[0]}</li>
           <li class="tech-item">${project[id].tech[1]}</li>
           <li class="tech-item">${project[id].tech[2]}</li>
@@ -187,20 +187,33 @@ const popUp = (project, id) => {
           <i
             class="fa-solid fa-arrow-up-right-from-square button-icon"
           ></i>
-        </a> 
+        </a>
+        <button class="popUp-button">Close</button>
       </div>
-    </section>
-  `
-}
+  `;
+};
 
 displayAllProjects(projects);
 
+const toggle = () => {
+  const closePopUpBtn = document.querySelector(".popUp-button");
+  closePopUpBtn.addEventListener("click", () => {
+    popUpContainer.classList.toggle("active");
+    mainBody.classList.toggle("active");
+  });
+};
+
 const displayPopUps = () => {
   const buttonProject = document.querySelectorAll(".button-project");
-  buttonProject.forEach(button => {
-    button.addEventListener('click', () => popUp(projects, button.id))
+  buttonProject.forEach((button) => {
+    button.addEventListener("click", () => {
+      popUp(projects, button.id);
+      popUpContainer.classList.toggle("active");
+      mainBody.classList.toggle("active");
+      toggle();
+    });
   });
-}
+};
 
 displayPopUps();
 
