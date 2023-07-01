@@ -122,9 +122,10 @@ main {
 }
 
 main.active {
-  filter: blur(20px);
+  filter: blur(7px);
   pointer-events: none;
   user-select: none;
+  background-color: var(--body-color-dark);
   transition: var(--transition);
 }
 
@@ -182,7 +183,7 @@ main.active {
 
 /* ==================== NAV ==================== */
 .nav-header {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -468,9 +469,13 @@ main.active {
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
-  width: 600px;
-  padding: 50px;
+  width: 80%;
+  overflow-y: scroll;
+  max-height: 90%;
+  padding: 1.5rem;
+  margin: 0.5rem auto;
   background-color: #fff;
+  border-radius: 24px;
   visibility: hidden;
   opacity: 0;
   transition: var(--transition);
@@ -482,10 +487,42 @@ main.active {
   transition: var(--transition);
 }
 
+.popUp-close-btn {
+  font-size: 25px;
+  margin-left: 100%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popUp-img {
+  padding: 1.5rem 0;
+}
+
+.popUp-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.popUp-title {
+  font-size: var(--h1-font-size);
+}
+
+.popUp-data {
+  display: grid;
+  grid-template-columns: 1fr 35%;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 /* ==================== TESTIMONIAL ==================== */
 
 .testimonial {
-  padding: 0 8% 10% 8%;
+  padding: 8% 8% 10% 8%;
 }
 
 .testimonial-container {
@@ -537,6 +574,7 @@ main.active {
   width: 100%;
   background-color: #fff;
   padding: 0 8% 8% 8%;
+  text-align: center;
 }
 
 .about-description {
@@ -552,9 +590,8 @@ main.active {
 
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  justify-content: center;
 }
 
 .tech-arrow-icon {
@@ -772,6 +809,15 @@ main.active {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* ==================== PORTFOLIO ==================== */
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+
+  .reverse {
+    grid-row-start: auto;
+  }
+
   /* ==================== TESTIMONIAL ==================== */
   .testimonial-description {
     margin-bottom: var(--mb-0-25);
@@ -779,6 +825,7 @@ main.active {
 
   /* ==================== CONTACTME ==================== */
   .contact {
+    padding: 15% 19% 0 19%;
     border-top-left-radius: 80px;
   }
 
@@ -788,5 +835,18 @@ main.active {
 
   .contact-input {
     min-width: 20rem;
+  }
+
+  /* ==================== POPUP ==================== */
+  .popUp-container {
+    top: 45%;
+    width: 90%;
+  }
+
+  .popUp-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 }

@@ -152,51 +152,57 @@ const displayAllProjects = (projects) => {
 
 const popUp = (project, id) => {
   popUpContainer.innerHTML = `
-    <div class="popUp-content">
-      <img
-        src=${project[id].img}
-        class="popUp-img"
-        alt="Project-preview"
-      />
-      <div class="popUp-data">
-        <h3 class="popUp-title">${project[id].title}</h3>
-        <p class="popUp-description">
+  <button class="popUp-close-btn">
+  <i 
+  class="fa-solid fa-xmark">
+  </i>
+  </button>
+  <img
+    src=${project[id].img}
+    class="popUp-img"
+    alt="Project-preview"
+  />
+  <div class="popUp-data">
+    <div class="popUp-intro">
+      <h3 class="popUp-title">${project[id].title}</h3>
+      <p class="popUp-description">
         ${project[id].description}
-        </p>
-        <ul class="portfolio-tech-list">
-          <li class="tech-item">${project[id].tech[0]}</li>
-          <li class="tech-item">${project[id].tech[1]}</li>
-          <li class="tech-item">${project[id].tech[2]}</li>
-          <li class="tech-item">${project[id].tech[3]}</li>
-          <li class="tech-item">${project[id].tech[4]}</li>
-        </ul>
-        <a
-          href=${project[id].sourceLink}
-          target="_blank"
-          class="button button--flex button--small portfolio-button"
-          >
-          Source code
-          <i class="fa-solid fa-arrow-right button-icon"></i>
-          </a>
-        <a
-          href=${project[id].liveLink}
-          target="_blank"
-          class="button button--flex button--small button-live portfolio-button"
-          >
-          Live code
-          <i
-            class="fa-solid fa-arrow-up-right-from-square button-icon"
-          ></i>
-        </a>
-        <button class="popUp-button">Close</button>
-      </div>
+      </p>
+    </div>
+    <div class="popUp-details">
+      <ul class="portfolio-tech-list">
+        <li class="tech-item">${project[id].tech[0]}</li>
+        <li class="tech-item">${project[id].tech[1]}</li>
+        <li class="tech-item">${project[id].tech[2]}</li>
+        <li class="tech-item">${project[id].tech[3]}</li>
+        <li class="tech-item">${project[id].tech[4]}</li>
+      </ul>
+    <a
+      href=${project[id].sourceLink}
+      target="_blank"
+      class="button button--flex button--small portfolio-button"
+    >
+      Source code
+      <i class="fa-solid fa-arrow-right button-icon"></i>
+    </a>
+    <a
+      href=${project[id].liveLink}
+      target="_blank"
+      class="button button--flex button--small button-live portfolio-button"
+    >
+      Live code
+      <i
+      class="fa-solid fa-arrow-up-right-from-square button-icon"
+      ></i>
+    </a>
+    </div>
   `;
 };
 
 displayAllProjects(projects);
 
-const toggle = () => {
-  const closePopUpBtn = document.querySelector(".popUp-button");
+const popUpClosetoggle = () => {
+  const closePopUpBtn = document.querySelector(".popUp-close-btn");
   closePopUpBtn.addEventListener("click", () => {
     popUpContainer.classList.toggle("active");
     mainBody.classList.toggle("active");
@@ -210,7 +216,7 @@ const displayPopUps = () => {
       popUp(projects, button.id);
       popUpContainer.classList.toggle("active");
       mainBody.classList.toggle("active");
-      toggle();
+      popUpClosetoggle();
     });
   });
 };
