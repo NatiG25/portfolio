@@ -405,7 +405,7 @@ main.active {
 
 .portfolio-img {
   width: 100%;
-  height: 100%;
+  height: 20rem;
   border-radius: 24px;
   padding: 1rem;
   background-color: var(--body-color-dark);
@@ -498,6 +498,8 @@ main.active {
 
 .popUp-img {
   padding: 1.5rem 0;
+  width: 100%;
+  height: 40rem;
 }
 
 .popUp-intro {
@@ -814,6 +816,10 @@ main.active {
     grid-template-columns: 1fr;
   }
 
+  .portfolio-img {
+    height: auto;
+  }
+
   .reverse {
     grid-row-start: auto;
   }
@@ -848,5 +854,9 @@ main.active {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .popUp-img {
+    height: auto;
   }
 }
