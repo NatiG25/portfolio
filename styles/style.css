@@ -489,7 +489,7 @@ main.active {
 
 .popUp-close-btn {
   font-size: 25px;
-  margin-left: 100%;
+  margin-left: 98.5%;
   background-color: #fff;
   border: none;
   outline: none;
@@ -858,5 +858,9 @@ main.active {
 
   .popUp-img {
     height: auto;
+  }
+
+  .popUp-close-btn {
+    margin-left: 95.5%;
   }
 }
