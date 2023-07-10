@@ -524,7 +524,7 @@ main.active {
 /* ==================== TESTIMONIAL ==================== */
 
 .testimonial {
-  padding: 8% 8% 10% 8%;
+  padding: 0 8% 10% 8%;
 }
 
 .testimonial-container {
@@ -575,7 +575,7 @@ main.active {
 .about {
   width: 100%;
   background-color: #fff;
-  padding: 0 8% 8% 8%;
+  padding: 8% 8% 10% 8%;
   text-align: center;
 }
 
@@ -812,6 +812,10 @@ main.active {
   }
 
   /* ==================== PORTFOLIO ==================== */
+  .portfolio {
+    padding: 15% 8% 10% 8%;
+  }
+
   .portfolio-content {
     grid-template-columns: 1fr;
   }
@@ -825,8 +829,17 @@ main.active {
   }
 
   /* ==================== TESTIMONIAL ==================== */
+  .testimonial {
+    padding: 15% 8% 10% 8%;
+  }
+
   .testimonial-description {
     margin-bottom: var(--mb-0-25);
+  }
+
+  /* ==================== ABOUT ==================== */
+  .about {
+    padding: 15% 8% 10% 8%;
   }
 
   /* ==================== CONTACTME ==================== */
