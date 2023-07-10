@@ -23,6 +23,28 @@ document.querySelectorAll('.nav-mobile-link').forEach((n) => n.addEventListener(
 
 const projects = [
   {
+    img: 'image/riyadh-saudi-arabia.jpeg',
+    title: 'Riyadh Season',
+    description: `This website provides users with a glimpse or an idea of how
+    Saudi Arabia celebrates during the annual Riyadh season
+    festival for both this year and the previous one.
+    Additionally, users can get to know the people behind the
+    festival.`,
+    tech: ['JavaScriptES6', 'Bootstrap', 'Git', 'CSS', 'GitHub'],
+    sourceLink: 'https://github.com/NatiG25/Riyadh-season',
+    liveLink: 'https://natig25.github.io/Riyadh-season/',
+  },
+  {
+    img: 'image/MathMagic.png',
+    title: 'Math Magicians',
+    description: `"Math magicians" is a website for all math lovers out there.
+    It is a single-page app that allows users to make simple
+    calculations while reading math-related content.`,
+    tech: ['JavaScriptES6', 'React', 'Netlify', 'Router', 'Snapshot-Testing'],
+    sourceLink: 'https://github.com/NatiG25/Math-Magicians',
+    liveLink: 'https://math-magicians25.netlify.app/',
+  },
+  {
     img: 'image/react-weather-app.png',
     title: 'Weather App',
     description: `With this app, you can quickly check the current weather
@@ -64,28 +86,6 @@ const projects = [
   //   sourceLink: 'https://github.com/NatiG25/budget-app',
   //   liveLink: 'https://budget-app-qgqp.onrender.com/',
   // },
-  {
-    img: 'image/riyadh-saudi-arabia.jpeg',
-    title: 'Riyadh Season',
-    description: `This website provides users with a glimpse or an idea of how
-    Saudi Arabia celebrates during the annual Riyadh season
-    festival for both this year and the previous one.
-    Additionally, users can get to know the people behind the
-    festival.`,
-    tech: ['JavaScriptES6', 'Bootstrap', 'Git', 'CSS', 'GitHub'],
-    sourceLink: 'https://github.com/NatiG25/Riyadh-season',
-    liveLink: 'https://natig25.github.io/Riyadh-season/',
-  },
-  {
-    img: 'image/MathMagic.png',
-    title: 'Math Magicians',
-    description: `"Math magicians" is a website for all math lovers out there.
-    It is a single-page app that allows users to make simple
-    calculations while reading math-related content.`,
-    tech: ['JavaScriptES6', 'React', 'Netlify', 'Router', 'Snapshot-Testing'],
-    sourceLink: 'https://github.com/NatiG25/Math-Magicians',
-    liveLink: 'https://math-magicians25.netlify.app/',
-  },
 ];
 
 const displayAllProjects = (projects) => {
