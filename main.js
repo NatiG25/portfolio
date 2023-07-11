@@ -31,7 +31,7 @@ const projects = [
     Additionally, users can get to know the people behind the
     festival.`,
     tech: ['JavaScriptES6', 'Bootstrap', 'Git', 'CSS', 'GitHub'],
-    sourceLink: 'https://github.com/NatiG25/Riyadh-season',
+    sourceLink: 'https://github.com/NatiG25/riyadh-season',
     liveLink: 'https://natig25.github.io/Riyadh-season/',
   },
   {
