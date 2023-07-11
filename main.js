@@ -32,7 +32,7 @@ const projects = [
     festival.`,
     tech: ['JavaScriptES6', 'Bootstrap', 'Git', 'CSS', 'GitHub'],
     sourceLink: 'https://github.com/NatiG25/riyadh-season',
-    liveLink: 'https://natig25.github.io/Riyadh-season/',
+    liveLink: 'https://natig25.github.io/riyadh-season/',
   },
   {
     img: 'image/MathMagic.png',
@@ -41,7 +41,7 @@ const projects = [
     It is a single-page app that allows users to make simple
     calculations while reading math-related content.`,
     tech: ['JavaScriptES6', 'React', 'Netlify', 'Router', 'Snapshot-Testing'],
-    sourceLink: 'https://github.com/NatiG25/Math-Magicians',
+    sourceLink: 'https://github.com/NatiG25/math-magicians',
     liveLink: 'https://math-magicians25.netlify.app/',
   },
   {
@@ -62,7 +62,7 @@ const projects = [
     space missions. All information is real-time data from the
     SpaceX API.`,
     tech: ['React', 'Redux', 'API', 'Netlify', 'Snapshot-Testing'],
-    sourceLink: 'https://github.com/NatiG25/Space-Travels-Hub',
+    sourceLink: 'https://github.com/NatiG25/space-travels-hub',
     liveLink: 'https://spacehub1.netlify.app/',
   },
   {
