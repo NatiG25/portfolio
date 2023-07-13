@@ -5,6 +5,7 @@ const mainBody = document.querySelector('#main-body');
 const navClose = document.getElementById('nav_close');
 const navMenu = document.getElementById('nav_menu');
 const menuApp = document.getElementById('menu-app');
+const navHeader = document.querySelector('.nav-header')
 // PORTFOLIO
 const portfolioSection = document.querySelector('.portfolio-container');
 const popUpContainer = document.querySelector('.popUp-container');
@@ -20,6 +21,19 @@ navClose.addEventListener('click', () => {
 document.querySelectorAll('.nav-mobile-link').forEach((n) => n.addEventListener('click', () => {
   navMenu.classList.remove('show-menu');
 }));
+
+// Hide Nav
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  if (lastScrollY < window.scrollY) {
+    navHeader.classList.add("nav-header-hide")
+  } else {
+    navHeader.classList.remove("nav-header-hide")
+  }
+
+  lastScrollY = window.scrollY;
+})
 
 const projects = [
   {

@@ -183,7 +183,7 @@ main.active {
 
 /* ==================== NAV ==================== */
 .nav-header {
-  /* position: fixed; */
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,6 +192,11 @@ main.active {
   width: 100%;
   z-index: 5;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.nav-header-hide {
+  transform: translateY(-100px);
 }
 
 .nav-bar {
@@ -728,10 +733,13 @@ main.active {
   }
 
   .nav-header {
-    position: fixed;
     bottom: 0;
     left: 0;
     box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+  }
+
+  .nav-header-hide {
+    transform: none;
   }
 
   .nav-mobile-link {
