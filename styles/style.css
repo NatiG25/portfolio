@@ -688,7 +688,7 @@ main.active {
   justify-content: center;
 } */
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 936px) {
   /* ==================== REUSABLE CSS CLASSES ==================== */
   .section-subtitle {
     font-size: var(--small-font-size);
