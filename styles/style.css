@@ -274,14 +274,8 @@ main.active {
 }
 
 .logo {
-  font-size: 18px;
-  line-height: 20px;
-  padding: 1rem;
-  border: 1px solid var(--first-color-alt);
-  border-radius: 50%;
-  background-color: #fff;
-  color: var(--first-color-alt);
-  margin: 1rem;
+  padding-left: 1rem;
+  width: 6.5rem;
 }
 
 .head-small-intro {
@@ -784,8 +778,7 @@ main.active {
   }
 
   .logo {
-    font-size: 15px;
-    margin: 0.5rem;
+    width: 5rem;
   }
 
   .head-title {
