@@ -275,7 +275,9 @@ main.active {
 
 .logo {
   padding-left: 1rem;
-  width: 6.5rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
 }
 
 .head-small-intro {
@@ -778,7 +780,7 @@ main.active {
   }
 
   .logo {
-    width: 5rem;
+    width: 4.5rem;
   }
 
   .head-title {
