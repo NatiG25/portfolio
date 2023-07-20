@@ -63,6 +63,29 @@
   --transition: 0.5s ease-in-out;
 }
 
+/* ========== ANIMATIONS ========== */
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@keyframes slideLeftIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
@@ -92,6 +115,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  animation: transitionIn 1s;
 }
 
 h1,
@@ -698,6 +722,7 @@ main.active {
     bottom: auto;
     width: 100%;
     margin-top: 5rem;
+    animation: slideLeftIn ease-out 1s;
   }
 
   .side-panel-hr {
