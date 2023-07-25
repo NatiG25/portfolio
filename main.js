@@ -110,7 +110,8 @@ const displayAllProjects = (projects) => {
         src=${projects[i].img}
         class="portfolio-img"
         alt="Project-preview"
-      />
+        loading="lazy"
+        />
       <div class="portfolio-data">
         <h3 class="portfolio-title">${projects[i].title}</h3>
         <p class="portfolio-description">
@@ -137,6 +138,7 @@ const displayAllProjects = (projects) => {
         src=${projects[i].img}
         class="portfolio-img"
         alt="Project-preview"
+        loading="lazy"
       />
       <div class="portfolio-data reverse">
         <h3 class="portfolio-title">${projects[i].title}</h3>
@@ -173,6 +175,7 @@ const popUp = (project, id) => {
     src=${project[id].img}
     class="popUp-img"
     alt="Project-preview"
+    loading="lazy"
   />
   <div class="popUp-data">
     <div class="popUp-intro">
