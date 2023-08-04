@@ -54,7 +54,7 @@ const projects = [
     description: `"Math magicians" is a website for all math lovers out there.
     It is a single-page app that allows users to make simple
     calculations while reading math-related content.`,
-    tech: ['JavaScriptES6', 'React', 'Netlify', 'Router', 'Snapshot-Testing'],
+    tech: ['JavaScriptES6', 'API', 'Rails', 'React', 'Netlify', 'Router', 'Snapshot-Testing'],
     sourceLink: 'https://github.com/NatiG25/math-magicians',
     liveLink: 'https://math-magicians25.netlify.app/',
   },
