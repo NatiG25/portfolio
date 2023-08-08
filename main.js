@@ -37,7 +37,7 @@ window.addEventListener("scroll", () => {
 
 const projects = [
   {
-    img: 'image/riyadh-saudi-arabia.jpeg',
+    img: 'image/riyadhSeason.jpeg',
     title: 'Riyadh Season',
     description: `This website provides users with a glimpse or an idea of how
     Saudi Arabia celebrates during the annual Riyadh season
