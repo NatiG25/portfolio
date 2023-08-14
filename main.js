@@ -5,9 +5,12 @@ const mainBody = document.querySelector('#main-body');
 const navClose = document.getElementById('nav_close');
 const navMenu = document.getElementById('nav_menu');
 const menuApp = document.getElementById('menu-app');
-const navHeader = document.querySelector('.nav-header')
+const navHeader = document.querySelector('.nav-header');
 // PORTFOLIO
 const portfolioSection = document.querySelector('.portfolio-container');
+const noteWorthySection = document.querySelector('.noteWorthy-container');
+const seeMoreSection = document.querySelector('.seeMore-container');
+const seeMoreButton = document.querySelector('.seeMore-button');
 const popUpContainer = document.querySelector('.popUp-container');
 
 const addShowClass = () => {
@@ -25,17 +28,36 @@ document.querySelectorAll('.nav-mobile-link').forEach((n) => n.addEventListener(
 // Hide Nav
 let lastScrollY = window.scrollY;
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
   if (lastScrollY < window.scrollY) {
-    navHeader.classList.add("nav-header-hide")
+    navHeader.classList.add('nav-header-hide');
   } else {
-    navHeader.classList.remove("nav-header-hide")
+    navHeader.classList.remove('nav-header-hide');
   }
 
   lastScrollY = window.scrollY;
-})
+});
 
 const projects = [
+  {
+    img: 'image/riyadhSeason.jpeg',
+    title: 'We Fly Digital',
+    description: `This is an app that lists flight reservations, 
+    where a user can make reservations with a 
+    specific airline. It also displays the airline’s 
+    full description & details.`,
+    tech: [
+      'Jest/Snapshot testing',
+      'Netlify',
+      'JavaScript(ES6)',
+      'React',
+      'Redux',
+      'JWT',
+      'Rails-API',
+    ],
+    sourceLink: 'https://github.com/ibr5500/we_fly_digital_frontend',
+    liveLink: 'https://weflydigital.netlify.app/',
+  },
   {
     img: 'image/riyadhSeason.jpeg',
     title: 'Riyadh Season',
@@ -54,9 +76,27 @@ const projects = [
     description: `"Math magicians" is a website for all math lovers out there.
     It is a single-page app that allows users to make simple
     calculations while reading math-related content.`,
-    tech: ['JavaScriptES6', 'API', 'Rails', 'React', 'Netlify', 'Router', 'Snapshot-Testing'],
+    tech: [
+      'JavaScriptES6',
+      'API',
+      'Rails',
+      'React',
+      'Netlify',
+      'Router',
+      'Snapshot-Testing',
+    ],
     sourceLink: 'https://github.com/NatiG25/math-magicians',
     liveLink: 'https://math-magicians25.netlify.app/',
+  },
+  {
+    img: 'image/bugetApp.png',
+    title: 'Budget App',
+    description: `This is a web application where you can manage your budget.
+    You have a list of transactions associated with categories, so
+    that you can see how much money you have spent and on what.`,
+    tech: ['Ruby on Rails', 'PostgreSQL', 'Devise', 'Rspec', 'Bootstrap'],
+    sourceLink: 'https://github.com/NatiG25/budget-app',
+    liveLink: 'https://budget-app-qgqp.onrender.com/',
   },
   {
     img: 'image/react-weather-app.png',
@@ -79,27 +119,109 @@ const projects = [
     sourceLink: 'https://github.com/NatiG25/space-travels-hub',
     liveLink: 'https://spacehub1.netlify.app/',
   },
+];
+
+const noteWorthy = [
   {
-    img: 'image/MovieSpace.png',
+    title: 'We Fly Digital Backend',
+    description: `Our robust Rails API serves as the backbone 
+    of the 'We Fly Digital' project, seamlessly connecting 
+    users to a world of digital exploration. Whether it's 
+    booking flights, making reservations, or create & delete 
+    airlines, our Rails API ensures a smooth and responsive 
+    experience, enabling users to soar through the digital 
+    skies.`,
+    tech: ['Rails-API', 'Rspec', 'PostgreSQL', ''],
+    sourceLink: 'https://github.com/ibr5500/we_fly_digital_backend',
+    liveLink: 'https://weflydigitalapi.onrender.com/',
+  },
+  {
+    title: 'Flutter Todo-list',
+    description: `"Stay organized and boost productivity with our 
+    sleek and intuitive Flutter/Dart todo list mobile app. 
+    Effortlessly manage your tasks, set priorities, and track 
+    your progress on the go.`,
+    tech: ['Dart', 'Widgets', 'Custom classes'],
+    sourceLink: 'https://github.com/NatiG25/space-travels-hub',
+    liveLink: '',
+  },
+  {
     title: 'MovieSpace',
     description: `This web application is based on an external API. We selected
                   an API that provides data about top-rated movies and then
                   built a web app around it. The web app has two user
                   interfaces.`,
-    tech: ['JavaScriptES6', 'Webpack', 'API', 'Jest', 'CSS3'],
+    tech: ['JavaScriptES6', 'Webpack', 'API'],
     sourceLink: 'https://github.com/NatiG25/MovieSpace',
     liveLink: 'https://natig25.github.io/MovieSpace/',
   },
-  // {
-  //   img: 'image/bugetApp.png',
-  //   title: 'Budget App',
-  //   description: `This is a web application where you can manage your budget.
-  //   You have a list of transactions associated with categories, so
-  //   that you can see how much money you have spent and on what.`,
-  //   tech: ['Ruby on Rails', 'PostgreSQL', 'Devise', 'Rspec', 'Bootstrap'],
-  //   sourceLink: 'https://github.com/NatiG25/budget-app',
-  //   liveLink: 'https://budget-app-qgqp.onrender.com/',
-  // },
+  {
+    title: 'BookStore',
+    description: `This web application is based on an external API. We selected
+                  an API that provides data about top-rated movies and then
+                  built a web app around it. The web app has two user
+                  interfaces.`,
+    tech: ['JavaScriptES6', 'React', 'Redux'],
+    sourceLink: 'https://github.com/NatiG25/Bookstore',
+    liveLink: '',
+  },
+  {
+    title: 'LeaderBoard',
+    description: `This leader-board website displays scores submitted 
+    by different players. It also allows you to submit 
+    your score. All data is preserved thanks to the 
+    external Leader-board API service.`,
+    tech: [
+      'JavaScriptES6',
+      'Webpack',
+      'Async/Await',
+    ],
+    sourceLink: 'https://github.com/NatiG25/leaderboard',
+    liveLink: 'https://natig25.github.io/leaderboard/',
+  },
+  {
+    title: 'React Todo-list',
+    description: `This app allows you to create your todos 
+    with ease. Additionally, users could add, delete, edit & clear
+    out completed todos.`,
+    tech: ['React', 'Custom React Hooks', 'React-icons'],
+    sourceLink: 'https://github.com/NatiG25/react-todo',
+    liveLink: '',
+  },
+];
+
+const seeMore = [
+  {
+    title: 'School Library',
+    description: `Elevate learning with our innovative school 
+    library app powered by Ruby on Rails. Seamlessly manage and 
+    explore a vast collection of educational resources, from 
+    books to digital media.`,
+    tech: ['Ruby', 'Rspec', 'PostgreSQL'],
+    sourceLink: 'https://github.com/NatiG25/school-library',
+    liveLink: '',
+  }, 
+  {
+    title: 'Blog App',
+    description: `The Blog is a classic example of a blog 
+    website. The goal is to create a fully functional website 
+    that will show the list of posts and empower readers to 
+    interact with them by adding comments and liking posts.`,
+    tech: ['Ruby', 'Devise', 'PostgreSQL', 'cancancan', 'Rspec'],
+    sourceLink: 'https://github.com/NatiG25/school-library',
+    liveLink: '',
+  }, 
+  {
+    title: 'Catalog Of My Things',
+    description: `Discover the power of organization with 
+    our 'Catalog of My Things' project, thoughtfully crafted 
+    using the versatility of Ruby. Seamlessly manage and 
+    categorize your belongings with ease, creating a digital 
+    inventory that puts your possessions at your fingertips.`,
+    tech: ['Ruby', 'PostgreSQL', 'Rspec'],
+    sourceLink: 'https://github.com/NatiG25/school-library',
+    liveLink: '',
+  },
 ];
 
 const displayAllProjects = (projects) => {
@@ -237,6 +359,76 @@ const displayPopUps = () => {
 };
 
 displayPopUps();
+
+const displayNoteWorthyProjects = (listOfProjects, projectSection) => {
+  for(let i = 0; i < listOfProjects.length; i += 1) {
+    if(listOfProjects[i].liveLink) {
+      projectSection.innerHTML += `
+      <div class="noteWorthy-content">
+        <div class="noteWorthyIcons">
+          <a 
+            href=${listOfProjects[i].liveLink}
+            target="_blank"
+            >
+            <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i> 
+          </a>
+          <a 
+            href=${listOfProjects[i].sourceLink}
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <h3 class="noteWorthy-title">${listOfProjects[i].title}</h3>
+        <p class="portfolio-description">
+        ${listOfProjects[i].description}
+        </p>
+        <ul class="portfolio-tech-list">
+          <li class="noteWorthy-tech-item">${listOfProjects[i].tech[0]}</li>
+          <li class="noteWorthy-tech-item">${listOfProjects[i].tech[1]}</li>
+          <li class="noteWorthy-tech-item">${listOfProjects[i].tech[2]}</li>
+        </ul>
+      </div>
+      `;
+    } else {
+      projectSection.innerHTML += `
+      <div class="noteWorthy-content">
+        <div class="noteWorthyIcons">
+          <a 
+            href=${listOfProjects[i].sourceLink}
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <h3 class="noteWorthy-title">${listOfProjects[i].title}</h3>
+        <p class="portfolio-description">
+        ${listOfProjects[i].description}
+        </p>
+        <ul class="portfolio-tech-list">
+          <li class="noteWorthy-tech-item">${listOfProjects[i].tech[0]}</li>
+          <li class="noteWorthy-tech-item">${listOfProjects[i].tech[1]}</li>
+          <li class="noteWorthy-tech-item">${listOfProjects[i].tech[2]}</li>
+        </ul>
+      </div>
+      `;
+    }
+  }
+}
+
+displayNoteWorthyProjects(noteWorthy, noteWorthySection);
+displayNoteWorthyProjects(seeMore, seeMoreSection);
+
+const displaySeeMore = () => {
+  if (seeMoreButton.textContent === 'See less') {
+    seeMoreSection.style.display = 'none';
+    seeMoreButton.textContent = 'See more';
+  } else {
+    seeMoreSection.style.display = 'grid';
+    seeMoreButton.textContent = 'See less'
+  }
+}
+seeMoreButton.addEventListener('click', displaySeeMore)
 
 // ==== TESTIMONIAL ====
 const swiperTestimonial = new Swiper('.testimonial-container', {
