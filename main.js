@@ -164,7 +164,7 @@ const noteWorthy = [
     author, and cover image.`,
     tech: ['JavaScriptES6', 'React', 'Redux'],
     sourceLink: 'https://github.com/NatiG25/Bookstore',
-    liveLink: '',
+    liveLink: 'https://bookstore25.netlify.app/',
   },
   {
     title: 'LeaderBoard',
@@ -187,7 +187,7 @@ const noteWorthy = [
     out completed todos.`,
     tech: ['React', 'Custom React Hooks', 'React-icons'],
     sourceLink: 'https://github.com/NatiG25/react-todo',
-    liveLink: '',
+    liveLink: 'https://react-todos25.netlify.app/',
   },
 ];
 
