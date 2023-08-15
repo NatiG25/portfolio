@@ -96,7 +96,7 @@ const projects = [
     that you can see how much money you have spent and on what.`,
     tech: ['Ruby on Rails', 'PostgreSQL', 'Devise', 'Rspec', 'Bootstrap'],
     sourceLink: 'https://github.com/NatiG25/budget-app',
-    liveLink: 'https://budget-app-qgqp.onrender.com/',
+    liveLink: 'https://budget-app-13wq.onrender.com',
   },
   {
     img: 'image/react-weather-app.png',
