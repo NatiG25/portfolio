@@ -42,13 +42,14 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /* ========== Margenes Bottom ========== */
+  /* ========== Margines ========== */
 
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
   --mb-1: 1rem;
+  --mb-1-25: 1.25rem;
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
@@ -392,8 +393,7 @@ main.active {
   background-color: var(--body-color-dark);
 }
 
-.portfolio-container,
-.seeMore-container {
+.portfolio-container {
   display: grid;
   justify-content: center;
   overflow: initial;
@@ -497,12 +497,14 @@ main.active {
   padding-top: 10%;
 }
 
-.noteWorthy-container {
+.noteWorthy-container,
+.seeMore-container {
   display: grid;
   justify-content: center;
   overflow: initial;
-  margin: 0 auto;
+  margin: var(--mb-2-5) var(--mb-1-5) 0 var(--mb-1-25);
   gap: 2.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
 }
 
 .noteWorthy-content {
@@ -547,18 +549,19 @@ main.active {
 
 .seeMore-container {
   display: none;
-  justify-content: center;
-  overflow: initial;
-  margin: 2.5rem auto 0 auto;
-  transition: var(--transition);
-  gap: 2.5rem;
 }
 
 .seeMore-button {
   display: block;
   font-size: var(--h3-font-size);
   letter-spacing: 0.03em;
-  margin: 2rem auto;
+  margin: auto;
+  margin-top: var(--mb-1-25);
+}
+
+.seeMore-button:hover {
+  color: #fff;
+  background-color: var(--first-color-alt);
 }
 
 /* ==================== POPUP ==================== */
@@ -774,11 +777,6 @@ main.active {
   border-color: #5e6c84;
 }
 
-/* .submit-button {
-  display: flex;
-  justify-content: center;
-} */
-
 @media screen and (max-width: 936px) {
   /* ==================== REUSABLE CSS CLASSES ==================== */
   .section-subtitle {
@@ -927,8 +925,15 @@ main.active {
     grid-row-start: auto;
   }
 
+  /* ==================== NOTEWORTHY & SEE MORE ==================== */
+
   .noteWorthy {
     padding-top: 15%;
+  }
+
+  .noteWorthy-container,
+  .seeMore-container {
+    grid-template-columns: repeat(auto-fill, minmax(330px, auto));
   }
 
   /* ==================== TESTIMONIAL ==================== */

@@ -40,7 +40,7 @@ window.addEventListener('scroll', () => {
 
 const projects = [
   {
-    img: 'image/riyadhSeason.jpeg',
+    img: 'image/weFlyDigital.png',
     title: 'We Fly Digital',
     description: `This is an app that lists flight reservations, 
     where a user can make reservations with a 
@@ -131,18 +131,18 @@ const noteWorthy = [
     airlines, our Rails API ensures a smooth and responsive 
     experience, enabling users to soar through the digital 
     skies.`,
-    tech: ['Rails-API', 'Rspec', 'PostgreSQL', ''],
+    tech: ['Rails-API', 'Rspec', 'PostgreSQL'],
     sourceLink: 'https://github.com/ibr5500/we_fly_digital_backend',
     liveLink: 'https://weflydigitalapi.onrender.com/',
   },
   {
     title: 'Flutter Todo-list',
-    description: `"Stay organized and boost productivity with our 
+    description: `Stay organized and boost productivity with our 
     sleek and intuitive Flutter/Dart todo list mobile app. 
     Effortlessly manage your tasks, set priorities, and track 
     your progress on the go.`,
     tech: ['Dart', 'Widgets', 'Custom classes'],
-    sourceLink: 'https://github.com/NatiG25/space-travels-hub',
+    sourceLink: 'https://github.com/NatiG25/flutter-todo-list',
     liveLink: '',
   },
   {
@@ -157,10 +157,11 @@ const noteWorthy = [
   },
   {
     title: 'BookStore',
-    description: `This web application is based on an external API. We selected
-                  an API that provides data about top-rated movies and then
-                  built a web app around it. The web app has two user
-                  interfaces.`,
+    description: `This app provides a user-friendly platform 
+    for book enthusiasts to manage their personal reading 
+    collection. Users can effortlessly add new books to their 
+    virtual library, including essential details like title, 
+    author, and cover image.`,
     tech: ['JavaScriptES6', 'React', 'Redux'],
     sourceLink: 'https://github.com/NatiG25/Bookstore',
     liveLink: '',
@@ -428,6 +429,7 @@ const displaySeeMore = () => {
     seeMoreButton.textContent = 'See less'
   }
 }
+
 seeMoreButton.addEventListener('click', displaySeeMore)
 
 // ==== TESTIMONIAL ====
