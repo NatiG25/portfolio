@@ -195,7 +195,7 @@ const seeMore = [
   {
     title: 'School Library',
     description: `Elevate learning with our innovative school 
-    library app powered by Ruby on Rails. Seamlessly manage and 
+    library app powered by Ruby. Seamlessly manage and 
     explore a vast collection of educational resources, from 
     books to digital media.`,
     tech: ['Ruby', 'Rspec', 'PostgreSQL'],
