@@ -75,7 +75,7 @@ const projects = [
     title: 'Math Magicians',
     description: `"Math magicians" is a website for all math lovers out there.
     It is a single-page app that allows users to make simple
-    calculations while reading math-related content.`,
+    calculations while reading math-related quotes.`,
     tech: [
       'JavaScriptES6',
       'API',
@@ -209,7 +209,7 @@ const seeMore = [
     that will show the list of posts and empower readers to 
     interact with them by adding comments and liking posts.`,
     tech: ['Ruby', 'Devise', 'PostgreSQL', 'cancancan', 'Rspec'],
-    sourceLink: 'https://github.com/NatiG25/school-library',
+    sourceLink: 'https://github.com/NatiG25/blog-app',
     liveLink: '',
   }, 
   {
@@ -220,7 +220,7 @@ const seeMore = [
     categorize your belongings with ease, creating a digital 
     inventory that puts your possessions at your fingertips.`,
     tech: ['Ruby', 'PostgreSQL', 'Rspec'],
-    sourceLink: 'https://github.com/NatiG25/school-library',
+    sourceLink: 'https://github.com/NatiG25/catalog-of-my-things',
     liveLink: '',
   },
 ];
