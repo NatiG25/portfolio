@@ -110,7 +110,7 @@ const projects = [
   {
     img: 'image/SpaceTravelers.png',
     title: 'Space Travels',
-    description: `This is a web application for a company that provides
+    description: `This is a web application, which uses an API that provides 
     commercial and scientific space travel services. The
     application will allow users to book rockets and join selected
     space missions. All information is real-time data from the
